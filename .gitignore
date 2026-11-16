@@ -1,0 +1,8 @@
+opencode.json
+node_modules/
+.stitch/
+
+.next/
+out/
+.env*
+*.tsbuildinfo

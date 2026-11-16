@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  --color-paper: #fafafa;
+  --color-ink: #09090b;
+  --color-accent: #00fe66;
+  --color-secondary: #10b981;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+section[id] {
+  scroll-margin-top: 5rem;
+}
+
+body {
+  font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
+  background-color: #fafafa;
+  color: #09090b;
+  text-rendering: optimizeLegibility;
+}
+
+.font-syne {
+  font-family: var(--font-syne), sans-serif;
+  letter-spacing: -0.035em;
+}
+
+.font-mono-tech {
+  font-family: var(--font-jetbrains-mono), monospace;
+}
+
+::selection {
+  background-color: #09090b;
+  color: #00fe66;
+}
+
+.filter-item {
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}

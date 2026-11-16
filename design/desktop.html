@@ -1,0 +1,1005 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth antialiased" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Aditya Pratama — Senior Growth &amp; Performance Marketer</title>
+<!-- Fonts: Syne (Headlines), Inter (Body), JetBrains Mono (Technical Labels/Brutalist Code) -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500;600;700&amp;family=Syne:wght@700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface": "#ffffff",
+            "surface-dim": "#f4f4f5",
+            "surface-bright": "#ffffff",
+            "surface-container": "#f8f9fa",
+            "surface-container-high": "#ebebeb",
+            "surface-container-highest": "#e4e4e7",
+            "on-surface": "#09090b",
+            "on-surface-variant": "#52525b",
+            "outline": "#71717a",
+            "outline-variant": "#e4e4e7",
+            "primary": "#09090b",
+            "primary-container": "#18181b",
+            "on-primary": "#ffffff",
+            "secondary": "#10b981",
+            "secondary-container": "#00fe66",
+            "on-secondary": "#ffffff",
+            "accent": "#00fe66"
+          },
+          fontFamily: {
+            "headline": ["Syne", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"],
+            "body": ["Inter", "sans-serif"]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    body {
+      font-family: 'Inter', -apple-system, sans-serif;
+      text-rendering: optimizeLegibility;
+      background-color: #fafafa;
+      color: #09090b;
+    }
+    .font-syne {
+      font-family: 'Syne', sans-serif !important;
+      letter-spacing: -0.035em;
+    }
+    .font-mono-tech {
+      font-family: 'JetBrains Mono', monospace !important;
+    }
+    .grid-hairline {
+      box-shadow: 0 0 0 1px #09090b;
+    }
+    .filter-item {
+      transition: opacity 0.25s ease, transform 0.25s ease;
+    }
+    .filter-item.is-hidden {
+      display: none !important;
+    }
+  </style>
+</head>
+<body class="bg-[#fafafa] text-[#09090b] min-h-screen selection:bg-[#09090b] selection:text-[#00fe66] border-t-4 border-[#09090b]">
+<!-- SYSTEM TELEMETRY TICKER / TOP STATUS BAR -->
+<aside aria-label="System status" class="w-full bg-[#09090b] text-[#fafafa] border-b border-[#09090b] text-[11px] font-mono-tech tracking-wider uppercase py-2 px-4 md:px-8">
+<div class="max-w-[1360px] mx-auto flex flex-wrap justify-between items-center gap-2">
+<div class="flex items-center gap-3">
+<span class="inline-flex items-center gap-1.5 text-[#00fe66] font-bold">
+<span class="w-2 h-2 rounded-full bg-[#00fe66] animate-ping"></span>
+          SYS.AVAILABLE // STATUS: OPEN
+        </span>
+<span class="text-zinc-500 hidden sm:inline">|</span>
+<span class="text-zinc-300 hidden sm:inline">KETERSEDIAAN: Q3 / Q4 2024</span>
+</div>
+<div class="flex items-center gap-4 text-zinc-400">
+<span class="hidden md:inline">LOC: JAKARTA, ID (WIB/UTC+7)</span>
+<span class="text-zinc-500 hidden md:inline">|</span>
+<span class="text-[#00fe66]">PERFORMANCE &amp; GROWTH OPS</span>
+</div>
+</div>
+</aside>
+<!-- BRUTALIST PRIMARY NAVIGATION -->
+<header class="w-full bg-white border-b-2 border-[#09090b] sticky top-0 z-50">
+<div class="max-w-[1360px] mx-auto flex justify-between items-stretch min-h-[64px]">
+<!-- Brand Monogram / Identity Block -->
+<a class="flex items-center gap-3 px-5 md:px-8 border-r-2 border-[#09090b] hover:bg-[#09090b] hover:text-[#00fe66] transition-colors group" href="#hero">
+<div class="w-8 h-8 bg-[#09090b] text-white group-hover:bg-[#00fe66] group-hover:text-[#09090b] flex items-center justify-center font-mono-tech font-bold text-xs tracking-tighter transition-colors">
+          AP
+        </div>
+<div class="flex flex-col">
+<span class="font-syne font-extrabold text-base tracking-tight leading-none">ADITYA PRATAMA</span>
+<span class="font-mono-tech text-[10px] text-zinc-500 group-hover:text-zinc-300 uppercase tracking-widest mt-0.5">GROWTH SPECIALIST</span>
+</div>
+</a>
+<!-- Desktop Nav Links (Tab Architecture) -->
+<nav class="hidden lg:flex items-stretch font-mono-tech text-xs font-semibold tracking-wider"><a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors" href="#tentang">01 // TENTANG</a>
+<a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors" href="#keahlian">02 // KEAHLIAN</a>
+<a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors bg-zinc-100" href="#studi-kasus">03 // STUDI KASUS</a>
+<a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors" href="#pengalaman">04 // RIWAYAT</a>
+<a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors" href="#artikel">05 // PUBLIKASI</a>
+<a class="flex items-center px-5 border-r border-[#09090b] hover:bg-[#09090b] hover:text-white transition-colors" href="#kontak">06 // KONTAK</a></nav>
+<!-- Primary Action: Direct Download -->
+<div class="flex items-stretch">
+<a class="px-6 md:px-8 flex items-center justify-center gap-2 bg-[#09090b] text-[#00fe66] hover:bg-[#00fe66] hover:text-[#09090b] font-mono-tech text-xs font-bold uppercase tracking-wider transition-all" href="#kontak">
+<span>UNDUH CV</span>
+<span class="material-symbols-outlined text-[16px]">terminal</span>
+</a>
+</div>
+</div>
+</header>
+<!-- MAIN VIEWPORT CONTAINER -->
+<main class="max-w-[1360px] mx-auto px-4 md:px-8 py-8 md:py-12 space-y-16 md:space-y-24">
+<!-- 01. HERO ARCHITECTURAL GRID -->
+<section class="border-2 border-[#09090b] bg-white grid grid-cols-1 lg:grid-cols-12 shadow-[6px_6px_0px_#09090b]" id="hero">
+<!-- Left Column: Primary Copy & Directives -->
+<div class="lg:col-span-8 p-6 md:p-12 lg:border-r-2 lg:border-[#09090b] flex flex-col justify-between space-y-10">
+<div class="space-y-6">
+<div class="inline-flex items-center gap-2 font-mono-tech text-[11px] bg-zinc-100 border border-[#09090b] px-3 py-1 font-semibold uppercase tracking-wider">
+<span class="w-1.5 h-1.5 bg-[#09090b]"></span>
+<span>INDEX.PORTFOLIO // 2024 REVISION</span>
+</div>
+<div class="space-y-3">
+<p class="font-mono-tech text-xs uppercase tracking-widest text-zinc-500">
+              Aditya Pratama, S.Kom — Senior Growth &amp; Performance Specialist
+            </p>
+<h1 class="font-syne text-3xl sm:text-4xl md:text-5xl lg:text-[54px] font-extrabold text-[#09090b] leading-[1.08] tracking-tight">
+              Mengubah traffic menjadi konversi lewat <span class="bg-[#09090b] text-[#00fe66] px-2 py-0.5 inline-block">SEO</span>, <span class="border-b-4 border-[#09090b]">paid ads</span>, dan strategi <span class="underline decoration-2 underline-offset-4">konten</span>.
+            </h1>
+</div>
+<p class="text-zinc-600 text-base md:text-lg max-w-2xl leading-relaxed font-body">
+            Membantu brand berskala berkembang melalui eksekusi data-driven marketing, efisiensi budget iklan tanpa kompromi, dan funnel konversi terukur secara analitis.
+          </p>
+</div>
+<!-- Terminal CTA Strip -->
+<div class="pt-6 border-t-2 border-[#09090b] flex flex-wrap items-center gap-4">
+<a class="px-6 py-3.5 bg-[#09090b] text-white hover:bg-zinc-800 font-mono-tech text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition-colors" href="#studi-kasus">
+<span>[01] TELUSURI STUDI KASUS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_downward</span>
+</a>
+<a class="px-6 py-3.5 bg-white text-[#09090b] border-2 border-[#09090b] hover:bg-zinc-100 font-mono-tech text-xs font-bold tracking-wider uppercase flex items-center gap-3 transition-colors" href="#kontak">
+<span>KONSULTASI STRATEGI</span>
+<span class="material-symbols-outlined text-[16px]">east</span>
+</a>
+</div>
+</div>
+<!-- Right Column: Operator Dossier / Brutalist Profile Card -->
+<div class="lg:col-span-4 bg-zinc-50 flex flex-col justify-between border-t-2 lg:border-t-0 border-[#09090b]">
+<!-- Operator Header -->
+<div class="p-6 border-b-2 border-[#09090b] bg-white flex items-center gap-4">
+<div class="w-16 h-16 border-2 border-[#09090b] bg-zinc-200 overflow-hidden shrink-0">
+<img alt="Executive Portrait Aditya Pratama" class="w-full h-full object-cover grayscale contrast-125" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAN0O2hG4to51JnxKTY4QjFwH0s1vIyQZX1Xz7G9b1-qU7pSsTPO02cOUW-PwBEITocQu3kON7c6wKahYGy6cK0FuiXr3CnjIVnElQBCpcfWYVfJRBAsct_3PLsglfpWanPqh6_4ncNYYKUrQlwD2306ej4nwsP2UsK7yLTVDguJTqm8vqw_xHl1WAYazazVbu9pCuyEyqYNgqAufcDinynY0BCjlV6eJh-akl6V40"/>
+</div>
+<div>
+<div class="flex items-center gap-2">
+<span class="font-syne font-bold text-lg">Aditya Pratama</span>
+<span class="material-symbols-outlined text-[18px] text-[#09090b]">verified</span>
+</div>
+<p class="font-mono-tech text-[11px] text-zinc-600 uppercase">Growth Architect</p>
+<p class="font-mono-tech text-[10px] text-zinc-400 mt-0.5">ID: AP-MKT-88402</p>
+</div>
+</div>
+<!-- Metric Table Cells -->
+<div class="p-6 space-y-4 font-mono-tech text-xs flex-1">
+<div class="border border-[#09090b] bg-white p-3 space-y-1">
+<span class="text-[10px] text-zinc-500 uppercase tracking-widest block">SERTIFIKASI UTAMA</span>
+<span class="font-bold text-[#09090b]">Certified Google &amp; Meta Marketer</span>
+</div>
+<div class="border border-[#09090b] bg-white p-3 space-y-1">
+<span class="text-[10px] text-zinc-500 uppercase tracking-widest block">METODOLOGI EKSEKUSI</span>
+<span class="font-bold text-[#09090b]">Berdasarkan Data, ROI &amp; CAC Terukur</span>
+</div>
+<div class="border border-[#09090b] bg-white p-3 space-y-1">
+<span class="text-[10px] text-zinc-500 uppercase tracking-widest block">STATUS KONTRAK</span>
+<span class="font-bold text-[#09090b] flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#00fe66]"></span>
+              TERBUKA UNTUK PELUANG Q3 / Q4
+            </span>
+</div>
+</div>
+<!-- Terminal System Note -->
+<div class="p-4 bg-zinc-100 border-t-2 border-[#09090b] text-[10px] font-mono-tech text-zinc-500 text-center tracking-wider">
+          TELEMETRY VERIFIED // SYSTEM REVISION 2.4.0
+        </div>
+</div>
+</section>
+<!-- 02. KEY METRICS TERMINAL STRIP (HIGH DENSITY LEDGER) -->
+<section class="space-y-2">
+<div class="flex items-center justify-between text-[11px] font-mono-tech uppercase text-zinc-500 px-1">
+<span>[LEDGER: CORE_PERFORMANCE_METRICS]</span>
+<span>INDEXED FROM 2020-2024</span>
+</div>
+<div class="border-2 border-[#09090b] bg-white grid grid-cols-2 lg:grid-cols-4 shadow-[4px_4px_0px_#09090b]">
+<!-- Metric 1 -->
+<div class="p-6 md:p-8 border-b-2 lg:border-b-0 border-r-2 border-[#09090b] flex flex-col justify-between">
+<span class="font-mono-tech text-[11px] uppercase tracking-wider text-zinc-500">01 // PENGALAMAN INDUSTRI</span>
+<div class="my-4">
+<span class="font-syne text-4xl md:text-5xl font-extrabold text-[#09090b] tracking-tight">4+</span>
+<span class="font-mono-tech text-lg font-bold text-zinc-400">THN</span>
+</div>
+<span class="font-mono-tech text-[10px] text-zinc-400 bg-zinc-100 px-2 py-0.5 w-fit border border-zinc-300">METRIC.EXP: VERIFIED</span>
+</div>
+<!-- Metric 2 -->
+<div class="p-6 md:p-8 border-b-2 lg:border-b-0 lg:border-r-2 border-[#09090b] flex flex-col justify-between">
+<span class="font-mono-tech text-[11px] uppercase tracking-wider text-zinc-500">02 // CAMPAIGN DIKELOLA</span>
+<div class="my-4">
+<span class="font-syne text-4xl md:text-5xl font-extrabold text-[#09090b] tracking-tight">30+</span>
+<span class="font-mono-tech text-lg font-bold text-zinc-400">PROJ</span>
+</div>
+<span class="font-mono-tech text-[10px] text-zinc-400 bg-zinc-100 px-2 py-0.5 w-fit border border-zinc-300">STATUS.ACTIVE_TOTAL</span>
+</div>
+<!-- Metric 3 -->
+<div class="p-6 md:p-8 border-r-2 border-[#09090b] flex flex-col justify-between bg-zinc-50">
+<span class="font-mono-tech text-[11px] uppercase tracking-wider text-zinc-500">03 // RATA-RATA ROAS PAID ADS</span>
+<div class="my-4 flex items-baseline gap-1">
+<span class="font-syne text-4xl md:text-5xl font-extrabold text-[#09090b] tracking-tight">4.0x</span>
+<span class="font-mono-tech text-xs font-bold text-emerald-600 bg-emerald-100 px-1 border border-emerald-400">AVG</span>
+</div>
+<span class="font-mono-tech text-[10px] text-emerald-700 font-bold bg-emerald-50 px-2 py-0.5 w-fit border border-emerald-300">META &amp; GOOGLE BLENDED</span>
+</div>
+<!-- Metric 4 -->
+<div class="p-6 md:p-8 flex flex-col justify-between bg-[#09090b] text-white">
+<span class="font-mono-tech text-[11px] uppercase tracking-wider text-[#00fe66]">04 // ORGANIC TRAFFIC</span>
+<div class="my-4 flex items-baseline gap-1">
+<span class="font-syne text-4xl md:text-5xl font-extrabold text-[#00fe66] tracking-tight">+120%</span>
+</div>
+<span class="font-mono-tech text-[10px] text-zinc-300 bg-zinc-800 px-2 py-0.5 w-fit border border-zinc-700">AGGREGATE SEARCH UPLIFT</span>
+</div>
+</div>
+</section>
+<!-- 03. TENTANG SAYA / PROFIL EKSEKUTIF -->
+<section class="border-2 border-[#09090b] bg-white grid grid-cols-1 lg:grid-cols-12 shadow-[6px_6px_0px_#09090b]" id="tentang">
+<!-- Left Anchor -->
+<div class="lg:col-span-4 p-6 md:p-10 border-b-2 lg:border-b-0 lg:border-r-2 border-[#09090b] bg-zinc-50 flex flex-col justify-between">
+<div class="space-y-3">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-500 uppercase tracking-widest">[01 // FILOSOFI OPERASIONAL]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b]">Tentang Saya</h2>
+<p class="text-sm font-mono-tech text-zinc-600">Efisiensi alokasi modal dan akurasi atribusi data.</p>
+</div>
+<div class="hidden lg:block pt-12">
+<div class="border border-[#09090b] p-4 bg-white font-mono-tech text-[11px] space-y-1">
+<div class="text-zinc-500">OPERATING PHILOSOPHY:</div>
+<div class="font-bold">"Every rupiah spent is an investment evaluated by CAC to LTV ratio."</div>
+</div>
+</div>
+</div>
+<!-- Right Content & Pillars -->
+<div class="lg:col-span-8 p-6 md:p-10 space-y-8">
+<div class="space-y-4">
+<p class="text-lg md:text-xl font-medium text-[#09090b] leading-relaxed">
+            Praktisi pemasaran digital berorientasi hasil dengan rekam jejak mengelola end-to-end campaign performance dan organik. Memadukan analisis analitik mendalam dengan strategi kreatif untuk menurunkan <strong class="bg-[#09090b] text-white px-1 font-mono-tech">Customer Acquisition Cost (CAC)</strong> dan memaksimalkan <strong class="bg-[#00fe66] text-[#09090b] px-1 font-mono-tech">Customer Lifetime Value (LTV)</strong>.
+          </p>
+<p class="text-zinc-600 leading-relaxed">
+            Berpengalaman dalam orkestrasi lintas platform (Meta Ads, Google Search &amp; Display, TikTok Ads) serta optimalisasi arsitektur situs untuk SEO teknis. Setiap rupiah alokasi media diperlakukan sebagai investasi terukur dengan pengujian hipotesis berkala.
+          </p>
+</div>
+<!-- 3 Work Pillars Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 border-2 border-[#09090b]">
+<div class="p-5 border-b md:border-b-0 md:border-r border-[#09090b] bg-zinc-50 space-y-2">
+<span class="font-mono-tech text-[10px] text-zinc-500 font-bold block">PILAR // 01</span>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Data-driven Decision</h3>
+<p class="text-xs text-zinc-600 font-body">Pengambilan keputusan berbasis atribusi akurat dan data riil.</p>
+</div>
+<div class="p-5 border-b md:border-b-0 md:border-r border-[#09090b] bg-white space-y-2">
+<span class="font-mono-tech text-[10px] text-zinc-500 font-bold block">PILAR // 02</span>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Continuous A/B Testing</h3>
+<p class="text-xs text-zinc-600 font-body">Iterasi terstruktur pada creative copy, hook visual, dan UX landing page.</p>
+</div>
+<div class="p-5 bg-zinc-50 space-y-2">
+<span class="font-mono-tech text-[10px] text-zinc-500 font-bold block">PILAR // 03</span>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Full-funnel Optimization</h3>
+<p class="text-xs text-zinc-600 font-body">Harmonisasi fase awareness (TOFU) hingga retensi pasca-pembelian.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 04. KEAHLIAN & KOMPETENSI INTI (MODULAR MATRIX) -->
+<section class="space-y-6" id="keahlian">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b-2 border-[#09090b] pb-4">
+<div>
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[02 // MATRIX KOMPETENSI]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b] tracking-tight">Keahlian &amp; Kompetensi Inti</h2>
+</div>
+<p class="font-mono-tech text-xs text-zinc-500">8 CORE DISCIPLINES // FULL-STACK DIGITAL ACQUISITION</p>
+</div>
+<!-- 8-Cell Grid Matrix with Hairline Borders -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 border-2 border-[#09090b] bg-white shadow-[6px_6px_0px_#09090b]">
+<!-- Skill 1 -->
+<div class="p-6 border-b md:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.01]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">search</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">SEO (Search Engine Optimization)</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Audit teknis arsitektur web, keyword research intents, on-page optimization, dan link building terstruktur.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Ahrefs, SEMrush, Technical Audit</div>
+</div>
+<!-- Skill 2 -->
+<div class="p-6 border-b lg:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.02]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">ads_click</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">SEM / Google Ads</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Pengelolaan Search, Display, dan Performance Max dengan kontrol target CPA, tROAS, serta negative keywords sculpting.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: PMax, Search Ads, Target CPA</div>
+</div>
+<!-- Skill 3 -->
+<div class="p-6 border-b md:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.03]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">campaign</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Meta Ads</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Strategi full-funnel (TOFU, MOFU, BOFU), catalog dynamic ads, and optimalisasi Audience Lookalike di Instagram &amp; Facebook.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Advantage+, CBO, Retargeting</div>
+</div>
+<!-- Skill 4 -->
+<div class="p-6 border-b border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.04]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">share</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Social Media Marketing</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Perencanaan pilar konten strategis, community growth, dan engagement rate terukur untuk memperkuat brand equity.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Organic Reach, Content Strategy</div>
+</div>
+<!-- Skill 5 -->
+<div class="p-6 border-b md:border-b-0 md:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.05]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">article</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Content Marketing</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Pembuatan copy persuasif berorientasi aksi, artikel SEO bernilai tinggi, dan lead magnet pendukung funnel konversi.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Copywriting, Lead Magnets</div>
+</div>
+<!-- Skill 6 -->
+<div class="p-6 border-b md:border-b-0 lg:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.06]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">query_stats</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">GA4 &amp; GTM Tracking</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Setup custom server-side &amp; client-side events, conversion tracking, dan analisis dashboard data studio analitik mendalam.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Tag Manager, GA4 Custom Events</div>
+</div>
+<!-- Skill 7 -->
+<div class="p-6 border-b md:border-b-0 md:border-r border-[#09090b] hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.07]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">mail</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Email Marketing</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Automasi welcome sequence, segmentasi subscriber berbasis behavior, dan kampanye newsletter retensi berulang.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: Klaviyo, Lifecycle Retention</div>
+</div>
+<!-- Skill 8 -->
+<div class="p-6 hover:bg-zinc-50 transition-colors group flex flex-col justify-between">
+<div class="space-y-3">
+<div class="flex justify-between items-center">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400 group-hover:text-[#09090b]">[SKILL.08]</span>
+<span class="material-symbols-outlined text-[20px] text-[#09090b]">smart_toy</span>
+</div>
+<h3 class="font-syne font-bold text-base text-[#09090b]">Marketing Automation</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">Integrasi CRM, nurture workflow otomatis, dan scoring lead untuk mempercepat sales cycle produk berkinerja tinggi.</p>
+</div>
+<div class="pt-4 font-mono-tech text-[10px] text-zinc-500 uppercase">Tags: HubSpot, Zapier, Webhooks</div>
+</div>
+</div>
+</section>
+<!-- 05. STUDI KASUS TERPILIH (HIGH CONTRAST DOSSIERS) -->
+<section class="space-y-8" id="studi-kasus">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b-2 border-[#09090b] pb-4">
+<div>
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[03 // REKAM JEJAK EKSEKUSI]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b] tracking-tight">Studi Kasus Terpilih</h2>
+</div>
+<div class="font-mono-tech text-xs bg-[#09090b] text-[#00fe66] px-3 py-1 font-bold">
+          DATA RESMI // TERUJI &amp; TERVERIFIKASI
+        </div>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1 font-mono-tech text-xs" data-filter-group="cases">
+<span class="text-[11px] text-zinc-500 uppercase font-semibold mr-1 flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-[#09090b]"></span>FILTER_BY:</span>
+<button class="filter-btn px-3 py-1.5 bg-[#09090b] text-[#00fe66] border-2 border-[#09090b] font-bold flex items-center gap-2 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="all">
+<span>SEMUA [ALL]</span>
+<span class="bg-zinc-800 text-white text-[10px] px-1 py-0.2 border border-zinc-700">03</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="paid-ads">
+<span>PAID ADS</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="seo-organic">
+<span>SEO &amp; ORGANIC</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="analytics">
+<span>ANALYTICS</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="cro-funnel">
+<span>CRO &amp; FUNNEL</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+</div>
+<div class="space-y-8" id="cases-container">
+<!-- Case Study 01: E-commerce Fashion -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[6px_6px_0px_#09090b]" data-category="paid-ads">
+<!-- Case Header Meta -->
+<div class="bg-zinc-100 border-b-2 border-[#09090b] px-6 py-3 flex flex-wrap justify-between items-center gap-2 font-mono-tech text-xs">
+<div class="flex items-center gap-2">
+<span class="bg-[#09090b] text-white px-2 py-0.5 font-bold">CASE // 01</span>
+<span class="font-bold text-[#09090b]">D2C E-COMMERCE FASHION</span>
+</div>
+<span class="text-zinc-600">PERIODE: Q2 - Q4 2023 [AUDITED]</span>
+</div>
+<!-- Body -->
+<div class="p-6 md:p-8 space-y-6">
+<div class="space-y-2">
+<h3 class="font-syne text-2xl md:text-3xl font-extrabold text-[#09090b]">
+                E-commerce Fashion: Skalabilitas Revenue &amp; Efisiensi Iklan
+              </h3>
+<p class="text-sm font-mono-tech text-zinc-600">
+<span class="font-bold text-[#09090b]">Konteks:</span> Brand fashion lokal D2C yang ingin meningkatkan omzet kuartalan dengan efisiensi alokasi media.
+              </p>
+</div>
+<!-- Brutalist Impact Ledger -->
+<div class="grid grid-cols-1 md:grid-cols-3 border-2 border-[#09090b] bg-zinc-50">
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b]">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">HASIL ROAS</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">ROAS 4.5x</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Baseline sebelum optimasi: 2.1x</span>
+</div>
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b] bg-white">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">PERTUMBUHAN PENDAPATAN</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">+65%</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Performa kuartal berturut-turut</span>
+</div>
+<div class="p-4 bg-[#09090b] text-white">
+<span class="font-mono-tech text-[10px] text-[#00fe66] uppercase block font-semibold">EFISIENSI BIAYA AKUISISI</span>
+<span class="font-syne text-3xl font-extrabold text-[#00fe66]">-28% CPA</span>
+<span class="font-mono-tech text-[11px] text-zinc-300 block mt-1">Biaya konversi tertekan signifikan</span>
+</div>
+</div>
+<!-- Action Table -->
+<div class="border border-[#09090b] p-4 bg-zinc-50 space-y-2">
+<span class="font-mono-tech text-xs font-bold text-[#09090b] uppercase tracking-wider block">[TINDAKAN STRATEGIS DIEKSEKUSI]:</span>
+<ul class="font-mono-tech text-xs text-zinc-700 space-y-1.5 list-disc list-inside">
+<li>Restrukturisasi kampanye Meta Ads dengan dynamic catalog ads tersegmen berdasarkan kategori minat produk.</li>
+<li>Pengujian terstruktur pada 15+ variasi creative ad (UGC hooks, clean product display, dan customer review carousel).</li>
+<li>Optimasi alur checkout abandonment via retargeting terpersonalisasi melalui integrasi email sequence &amp; SMS automation.</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Case Study 02: SaaS B2B -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[6px_6px_0px_#09090b]" data-category="cro-funnel analytics">
+<!-- Case Header Meta -->
+<div class="bg-zinc-100 border-b-2 border-[#09090b] px-6 py-3 flex flex-wrap justify-between items-center gap-2 font-mono-tech text-xs">
+<div class="flex items-center gap-2">
+<span class="bg-[#09090b] text-white px-2 py-0.5 font-bold">CASE // 02</span>
+<span class="font-bold text-[#09090b]">B2B ENTERPRISE SAAS</span>
+</div>
+<span class="text-zinc-600">PERIODE: Q1 - Q3 2023 [AUDITED]</span>
+</div>
+<!-- Body -->
+<div class="p-6 md:p-8 space-y-6">
+<div class="space-y-2">
+<h3 class="font-syne text-2xl md:text-3xl font-extrabold text-[#09090b]">
+                SaaS B2B: Akuisisi Qualified Leads Melalui Paid Search &amp; Inbound
+              </h3>
+<p class="text-sm font-mono-tech text-zinc-600">
+<span class="font-bold text-[#09090b]">Konteks:</span> Startup teknologi B2B membutuhkan peningkatan supply demo booking dari target pengambil keputusan level C-Level.
+              </p>
+</div>
+<!-- Brutalist Impact Ledger -->
+<div class="grid grid-cols-1 md:grid-cols-3 border-2 border-[#09090b] bg-zinc-50">
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b]">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">AKUISISI DEMO BOOKING</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">+85% Lead</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Peningkatan volume demo terverifikasi</span>
+</div>
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b] bg-white">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">RASIO KONVERSI LANDING PAGE</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">3.2% → 7.4%</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Optimasi UX &amp; lead form flow</span>
+</div>
+<div class="p-4 bg-[#09090b] text-white">
+<span class="font-mono-tech text-[10px] text-[#00fe66] uppercase block font-semibold">KUALITAS PROSPEK (SQL)</span>
+<span class="font-syne text-3xl font-extrabold text-[#00fe66]">+40% Score</span>
+<span class="font-mono-tech text-[11px] text-zinc-300 block mt-1">Peningkatan Sales Qualified Leads</span>
+</div>
+</div>
+<!-- Action Table -->
+<div class="border border-[#09090b] p-4 bg-zinc-50 space-y-2">
+<span class="font-mono-tech text-xs font-bold text-[#09090b] uppercase tracking-wider block">[TINDAKAN STRATEGIS DIEKSEKUSI]:</span>
+<ul class="font-mono-tech text-xs text-zinc-700 space-y-1.5 list-disc list-inside">
+<li>Penargetan kata kunci high-intent di Google Search dengan negative keyword sculpting presisi untuk memfilter traffic non-B2B.</li>
+<li>Pembuatan landing page interaktif dengan tracking Google Tag Manager presisi untuk mengukur micro-interaction sebelum booking.</li>
+<li>Implementasi LinkedIn Ads retargeting pada pengambil keputusan tingkat manajerial dan C-Suite.</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Case Study 03: F&B Chain -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[6px_6px_0px_#09090b]" data-category="seo-organic">
+<!-- Case Header Meta -->
+<div class="bg-zinc-100 border-b-2 border-[#09090b] px-6 py-3 flex flex-wrap justify-between items-center gap-2 font-mono-tech text-xs">
+<div class="flex items-center gap-2">
+<span class="bg-[#09090b] text-white px-2 py-0.5 font-bold">CASE // 03</span>
+<span class="font-bold text-[#09090b]">F&amp;B RETAIL MULTI-OUTLET</span>
+</div>
+<span class="text-zinc-600">DURASI: 6 BULAN AUDIT [KAMPANYE LOKAL]</span>
+</div>
+<!-- Body -->
+<div class="p-6 md:p-8 space-y-6">
+<div class="space-y-2">
+<h3 class="font-syne text-2xl md:text-3xl font-extrabold text-[#09090b]">
+                F&amp;B Lokal: Dominasi Visibilitas Organik &amp; Local Search
+              </h3>
+<p class="text-sm font-mono-tech text-zinc-600">
+<span class="font-bold text-[#09090b]">Konteks:</span> Jaringan kedai kopi modern dengan 8 outlet yang membutuhkan peningkatan foot-traffic dan pesanan delivery via optimasi lokal.
+              </p>
+</div>
+<!-- Brutalist Impact Ledger -->
+<div class="grid grid-cols-1 md:grid-cols-3 border-2 border-[#09090b] bg-zinc-50">
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b]">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">PERTUMBUHAN ORGANIK</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">+120% Traffic</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Kenaikan impresi &amp; klik search</span>
+</div>
+<div class="p-4 border-b md:border-b-0 md:border-r border-[#09090b] bg-white">
+<span class="font-mono-tech text-[10px] text-zinc-500 uppercase block font-semibold">INTERAKSI GOOGLE MAPS</span>
+<span class="font-syne text-3xl font-extrabold text-[#09090b]">+45% Aksi</span>
+<span class="font-mono-tech text-[11px] text-zinc-500 block mt-1">Panggilan, rute jalan, &amp; klik web</span>
+</div>
+<div class="p-4 bg-[#09090b] text-white">
+<span class="font-mono-tech text-[10px] text-[#00fe66] uppercase block font-semibold">AUDIENCE SOCIAL FOLLOWING</span>
+<span class="font-syne text-3xl font-extrabold text-[#00fe66]">+35,000</span>
+<span class="font-mono-tech text-[11px] text-zinc-300 block mt-1">Pertumbuhan follower aktif organik</span>
+</div>
+</div>
+<!-- Action Table -->
+<div class="border border-[#09090b] p-4 bg-zinc-50 space-y-2">
+<span class="font-mono-tech text-xs font-bold text-[#09090b] uppercase tracking-wider block">[TINDAKAN STRATEGIS DIEKSEKUSI]:</span>
+<ul class="font-mono-tech text-xs text-zinc-700 space-y-1.5 list-disc list-inside">
+<li>Optimasi Google Business Profile untuk 8 lokasi outlet dengan review management otomatis dan penyesuaian geotag gambar.</li>
+<li>Produksi konten video lokal di TikTok dan Instagram Reels berbasis geolokasi mikro sesuai target demografi outlet.</li>
+<li>Strategi artikel panduan kuliner lokal bernilai SEO tinggi yang sukses menembus Peringkat 1 Google.</li>
+</ul>
+</div>
+</div>
+</article>
+<!-- Empty State Placeholder for Studi Kasus -->
+<div class="hidden border-2 border-dashed border-[#09090b] bg-white p-8 md:p-12 text-center space-y-3" id="cases-empty-state">
+<div class="w-12 h-12 bg-zinc-100 border-2 border-[#09090b] mx-auto flex items-center justify-center font-mono-tech font-bold text-[#09090b]">
+<span class="material-symbols-outlined text-[24px]">folder_off</span>
+</div>
+<h4 class="font-syne font-bold text-lg text-[#09090b]">DATA_NOT_FOUND // HASIL KOSONG</h4>
+<p class="font-mono-tech text-xs text-zinc-500 max-w-md mx-auto">
+Tidak ditemukan studi kasus untuk filter kategori ini. Pilih kategori lain atau kembalikan ke SEMUA [ALL] untuk menampilkan seluruh arsip.
+</p>
+<button class="mt-2 px-4 py-2 bg-[#09090b] text-[#00fe66] font-mono-tech text-xs font-bold uppercase tracking-wider border border-[#09090b] hover:bg-[#00fe66] hover:text-[#09090b] transition-colors" onclick="resetFilter('cases')">
+RESET_FILTER [ALL]
+</button>
+</div>
+</div>
+</section>
+<!-- 06. PENGALAMAN & SERTIFIKASI RESMI (SPLIT DOSSIER) -->
+<section class="grid grid-cols-1 lg:grid-cols-12 gap-8" id="pengalaman">
+<!-- Career Milestones (Left Column) -->
+<div class="lg:col-span-7 space-y-6">
+<div class="border-b-2 border-[#09090b] pb-3">
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[04 // RIWAYAT KARIR]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b]">Pengalaman Kerja</h2>
+</div>
+<div class="space-y-4">
+<!-- Item 1 -->
+<div class="border-2 border-[#09090b] bg-white p-6 shadow-[4px_4px_0px_#09090b] space-y-3">
+<div class="flex flex-wrap justify-between items-start gap-2 border-b border-zinc-200 pb-2">
+<div>
+<h3 class="font-syne font-bold text-lg text-[#09090b]">Senior Digital Marketer</h3>
+<p class="font-mono-tech text-xs text-zinc-500 uppercase">Growth &amp; Performance Agency</p>
+</div>
+<span class="font-mono-tech text-xs font-bold bg-[#09090b] text-[#00fe66] px-2 py-0.5">2022 — SEKARANG</span>
+</div>
+<p class="text-sm text-zinc-700 leading-relaxed font-body">
+              Memimpin tim ad ops, mengelola budget media bulanan berskala puluhan hingga ratusan juta, serta melaporkan metrik performa langsung ke stakeholder tingkat C-Level.
+            </p>
+</div>
+<!-- Item 2 -->
+<div class="border-2 border-[#09090b] bg-white p-6 shadow-[4px_4px_0px_#09090b] space-y-3">
+<div class="flex flex-wrap justify-between items-start gap-2 border-b border-zinc-200 pb-2">
+<div>
+<h3 class="font-syne font-bold text-lg text-[#09090b]">Performance Marketing Specialist</h3>
+<p class="font-mono-tech text-xs text-zinc-500 uppercase">D2C Fast-Growing E-Commerce</p>
+</div>
+<span class="font-mono-tech text-xs font-bold bg-zinc-200 text-[#09090b] px-2 py-0.5">2020 — 2022</span>
+</div>
+<p class="text-sm text-zinc-700 leading-relaxed font-body">
+              Mengeksekusi campaign harian di Meta dan Google, optimasi funnel konversi landing page, serta pengujian A/B kreatifitas visual berkala untuk menekan CAC.
+            </p>
+</div>
+<!-- Item 3 -->
+<div class="border-2 border-[#09090b] bg-white p-6 shadow-[4px_4px_0px_#09090b] space-y-3">
+<div class="flex flex-wrap justify-between items-start gap-2 border-b border-zinc-200 pb-2">
+<div>
+<h3 class="font-syne font-bold text-lg text-[#09090b]">SEO &amp; Content Associate</h3>
+<p class="font-mono-tech text-xs text-zinc-500 uppercase">Digital Media Network</p>
+</div>
+<span class="font-mono-tech text-xs font-bold bg-zinc-200 text-[#09090b] px-2 py-0.5">2019 — 2020</span>
+</div>
+<p class="text-sm text-zinc-700 leading-relaxed font-body">
+              Riset keyword intent, penulisan artikel berperingkat tinggi di mesin pencari Google, dan audit on-page arsitektur web secara berkala.
+            </p>
+</div>
+</div>
+</div>
+<!-- Verified Certifications (Right Column) -->
+<div class="lg:col-span-5 space-y-6">
+<div class="border-b-2 border-[#09090b] pb-3">
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[05 // KREDENSIAL RESMI]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b]">Sertifikasi Resmi</h2>
+</div>
+<div class="border-2 border-[#09090b] bg-white shadow-[4px_4px_0px_#09090b] divide-y-2 divide-[#09090b]">
+<!-- Cert 1 -->
+<div class="p-4 flex items-center justify-between gap-3 hover:bg-zinc-50 transition-colors">
+<div class="space-y-1">
+<span class="font-mono-tech text-[10px] text-zinc-400 block">[CERT-01 // GOOGLE ADS]</span>
+<p class="font-syne font-bold text-sm text-[#09090b]">Google Ads Search &amp; Display Certified</p>
+<p class="font-mono-tech text-[10px] text-zinc-500">ID: GOOG-ADS-89421</p>
+</div>
+<span class="font-mono-tech text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-400 px-2 py-0.5">VERIFIED</span>
+</div>
+<!-- Cert 2 -->
+<div class="p-4 flex items-center justify-between gap-3 hover:bg-zinc-50 transition-colors">
+<div class="space-y-1">
+<span class="font-mono-tech text-[10px] text-zinc-400 block">[CERT-02 // ANALYTICS]</span>
+<p class="font-syne font-bold text-sm text-[#09090b]">Google Analytics 4 (GA4) Certification</p>
+<p class="font-mono-tech text-[10px] text-zinc-500">ID: GA4-CORP-44021</p>
+</div>
+<span class="font-mono-tech text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-400 px-2 py-0.5">VERIFIED</span>
+</div>
+<!-- Cert 3 -->
+<div class="p-4 flex items-center justify-between gap-3 hover:bg-zinc-50 transition-colors">
+<div class="space-y-1">
+<span class="font-mono-tech text-[10px] text-zinc-400 block">[CERT-03 // META BLUEPRINT]</span>
+<p class="font-syne font-bold text-sm text-[#09090b]">Meta Certified Digital Marketing Associate</p>
+<p class="font-mono-tech text-[10px] text-zinc-500">Meta Blueprint Credential Verified</p>
+</div>
+<span class="font-mono-tech text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-400 px-2 py-0.5">VERIFIED</span>
+</div>
+<!-- Cert 4 -->
+<div class="p-4 flex items-center justify-between gap-3 hover:bg-zinc-50 transition-colors">
+<div class="space-y-1">
+<span class="font-mono-tech text-[10px] text-zinc-400 block">[CERT-04 // INBOUND &amp; CRM]</span>
+<p class="font-syne font-bold text-sm text-[#09090b]">HubSpot Inbound &amp; Email Automation</p>
+<p class="font-mono-tech text-[10px] text-zinc-500">HubSpot Academy Credential</p>
+</div>
+<span class="font-mono-tech text-[10px] font-bold bg-emerald-100 text-emerald-800 border border-emerald-400 px-2 py-0.5">VERIFIED</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 07. TESTIMONI & REKOMENDASI (EDITORIAL BLOCKQUOTES) -->
+<!-- 07. PUBLIKASI & ARTIKEL / THOUGHT LEADERSHIP -->
+<section class="space-y-6" id="artikel">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-2 border-b-2 border-[#09090b] pb-4">
+<div>
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[SEC_05] // PUBLIKASI &amp; ARTIKEL</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b] tracking-tight">TULISAN &amp; THOUGHT LEADERSHIP</h2>
+</div>
+<p class="font-mono-tech text-xs text-zinc-500">// EKSPLORASI TAKTIKAL MENGENAI ATTRIBUTION, CRO, &amp; UNIT ECONOMICS</p>
+</div>
+<div class="flex flex-wrap items-center gap-2 pt-1 font-mono-tech text-xs" data-filter-group="articles">
+<span class="text-[11px] text-zinc-500 uppercase font-semibold mr-1 flex items-center gap-1.5"><span class="w-1.5 h-1.5 bg-[#09090b]"></span>KATEGORI:</span>
+<button class="filter-btn px-3 py-1.5 bg-[#09090b] text-[#00fe66] border-2 border-[#09090b] font-bold flex items-center gap-2 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="all">
+<span>SEMUA [ALL]</span>
+<span class="bg-zinc-800 text-white text-[10px] px-1 py-0.2 border border-zinc-700">03</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="analytics">
+<span>ANALYTICS</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="paid-ads">
+<span>PAID ADS</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="cro-funnel">
+<span>CRO &amp; FUNNEL</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">01</span>
+</button>
+<button class="filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer" data-filter="seo-organic">
+<span>SEO &amp; ORGANIC</span>
+<span class="bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300">00</span>
+</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="articles-container">
+<!-- Article 1 -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[4px_4px_0px_#09090b] flex flex-col justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#09090b] transition-all group" data-category="analytics">
+<div class="space-y-4 p-6">
+<div class="flex items-center justify-between font-mono-tech text-[10px] pb-3 border-b border-zinc-200">
+<span class="bg-[#09090b] text-[#00fe66] px-2 py-0.5 font-bold">[ESSAY // ATTRIBUTION]</span>
+<div class="flex items-center gap-2 text-zinc-500 font-semibold">
+<span>6 MIN READ</span>
+<span>•</span>
+<span>FEB 2024</span>
+</div>
+</div>
+<h3 class="font-syne font-bold text-lg md:text-xl text-[#09090b] group-hover:text-emerald-700 transition-colors leading-snug">
+Membangun Server-Side GTM &amp; CAPI: Mengatasi Atribusi Buta Pasca iOS 14.5
+</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">
+Panduan implementasi pelacakan first-party untuk memulihkan akurasi sinyal konversi Meta Ads hingga 92% dan menekan blended CAC.
+</p>
+</div>
+<div class="p-6 pt-0 space-y-4">
+<div class="bg-zinc-50 border border-[#09090b] px-3 py-2 flex items-center justify-between">
+<span class="font-mono-tech text-[10px] uppercase text-zinc-500 font-semibold">IMPACT / METRIC</span>
+<span class="font-mono-tech text-xs font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 border border-emerald-400">+24% SIGNAL ACCURACY</span>
+</div>
+<a class="w-full py-2.5 px-4 bg-[#09090b] text-white group-hover:bg-[#00fe66] group-hover:text-[#09090b] font-mono-tech text-xs font-bold uppercase tracking-wider flex items-center justify-between transition-colors border border-[#09090b]" href="#">
+<span>BACA ARTIKEL</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- Article 2 -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[4px_4px_0px_#09090b] flex flex-col justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#09090b] transition-all group" data-category="paid-ads">
+<div class="space-y-4 p-6">
+<div class="flex items-center justify-between font-mono-tech text-[10px] pb-3 border-b border-zinc-200">
+<span class="bg-[#09090b] text-[#00fe66] px-2 py-0.5 font-bold">[PLAYBOOK // PAID ADS]</span>
+<div class="flex items-center gap-2 text-zinc-500 font-semibold">
+<span>8 MIN READ</span>
+<span>•</span>
+<span>NOV 2023</span>
+</div>
+</div>
+<h3 class="font-syne font-bold text-lg md:text-xl text-[#09090b] group-hover:text-emerald-700 transition-colors leading-snug">
+Dekonstruksi Creative Fatigue: Framework Modular DCT untuk Skalasi Iklan D2C
+</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">
+Metodologi rotasi 3 visual hooks, 2 core copy angles, dan 2 CTA untuk menjaga ROAS stabil di atas 4.0x pada skala budget 9 digit.
+</p>
+</div>
+<div class="p-6 pt-0 space-y-4">
+<div class="bg-zinc-50 border border-[#09090b] px-3 py-2 flex items-center justify-between">
+<span class="font-mono-tech text-[10px] uppercase text-zinc-500 font-semibold">IMPACT / METRIC</span>
+<span class="font-mono-tech text-xs font-bold text-[#09090b] bg-zinc-200 px-1.5 py-0.5 border border-zinc-400">TESTED ON 100+ ADS</span>
+</div>
+<a class="w-full py-2.5 px-4 bg-[#09090b] text-white group-hover:bg-[#00fe66] group-hover:text-[#09090b] font-mono-tech text-xs font-bold uppercase tracking-wider flex items-center justify-between transition-colors border border-[#09090b]" href="#">
+<span>BACA ARTIKEL</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- Article 3 -->
+<article class="filter-item border-2 border-[#09090b] bg-white shadow-[4px_4px_0px_#09090b] flex flex-col justify-between hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_#09090b] transition-all group" data-category="cro-funnel">
+<div class="space-y-4 p-6">
+<div class="flex items-center justify-between font-mono-tech text-[10px] pb-3 border-b border-zinc-200">
+<span class="bg-[#09090b] text-[#00fe66] px-2 py-0.5 font-bold">[CASE // FUNNEL CRO]</span>
+<div class="flex items-center gap-2 text-zinc-500 font-semibold">
+<span>5 MIN READ</span>
+<span>•</span>
+<span>AGU 2023</span>
+</div>
+</div>
+<h3 class="font-syne font-bold text-lg md:text-xl text-[#09090b] group-hover:text-emerald-700 transition-colors leading-snug">
+Anatomi Landing Page B2B High-Converting: Mengurangi Friction Form Tanpa Mengorbankan Kualitas MQL
+</h3>
+<p class="text-xs text-zinc-600 leading-relaxed font-body">
+Eksperimen A/B testing multi-step lead capture yang meningkatkan conversion rate form dari 3.2% ke 7.4% pada audiens enterprise.
+</p>
+</div>
+<div class="p-6 pt-0 space-y-4">
+<div class="bg-zinc-50 border border-[#09090b] px-3 py-2 flex items-center justify-between">
+<span class="font-mono-tech text-[10px] uppercase text-zinc-500 font-semibold">IMPACT / METRIC</span>
+<span class="font-mono-tech text-xs font-bold text-emerald-700 bg-emerald-100 px-1.5 py-0.5 border border-emerald-400">+131% CVR UPLIFT</span>
+</div>
+<a class="w-full py-2.5 px-4 bg-[#09090b] text-white group-hover:bg-[#00fe66] group-hover:text-[#09090b] font-mono-tech text-xs font-bold uppercase tracking-wider flex items-center justify-between transition-colors border border-[#09090b]" href="#">
+<span>BACA ARTIKEL</span>
+<span class="material-symbols-outlined text-[16px]">north_east</span>
+</a>
+</div>
+</article>
+<!-- Empty State Placeholder for Publikasi & Artikel -->
+<div class="hidden col-span-1 md:col-span-3 border-2 border-dashed border-[#09090b] bg-white p-8 md:p-12 text-center space-y-3" id="articles-empty-state">
+<div class="w-12 h-12 bg-zinc-100 border-2 border-[#09090b] mx-auto flex items-center justify-center font-mono-tech font-bold text-[#09090b]">
+<span class="material-symbols-outlined text-[24px]">drafts</span>
+</div>
+<h4 class="font-syne font-bold text-lg text-[#09090b]">NO_DOCS_IN_QUEUE // ARSIP KOSONG</h4>
+<p class="font-mono-tech text-xs text-zinc-500 max-w-md mx-auto">
+Belum ada publikasi atau artikel yang dirilis pada kategori ini. Silakan akses kategori topik lain atau reset ke SEMUA [ALL].
+</p>
+<button class="mt-2 px-4 py-2 bg-[#09090b] text-[#00fe66] font-mono-tech text-xs font-bold uppercase tracking-wider border border-[#09090b] hover:bg-[#00fe66] hover:text-[#09090b] transition-colors" onclick="resetFilter('articles')">
+RESET_FILTER [ALL]
+</button>
+</div>
+</div>
+</section><section class="space-y-6">
+<div class="border-b-2 border-[#09090b] pb-3">
+<span class="font-mono-tech text-xs font-bold text-zinc-500 uppercase tracking-widest">[06 // ENDORSEMENT PEER-REVIEW]</span>
+<h2 class="font-syne text-3xl font-extrabold text-[#09090b]">Rekomendasi Rekan Kerja</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Testimonial 1 -->
+<div class="border-2 border-[#09090b] bg-white p-6 md:p-8 shadow-[4px_4px_0px_#09090b] flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400">[RECORD.END-01]</span>
+<p class="text-base md:text-lg font-medium text-[#09090b] leading-relaxed">
+              "Kemampuan analisis data dan eksekusi campaign Aditya sangat rapi. Selalu mampu menerjemahkan target bisnis menjadi rencana aksi marketing yang terukur dan efisien secara alokasi budget."
+            </p>
+</div>
+<div class="border-t-2 border-[#09090b] pt-4 font-mono-tech">
+<p class="font-bold text-sm text-[#09090b]">Rian Hidayat</p>
+<p class="text-xs text-zinc-500 uppercase">VP of Growth Marketing — PT Inovasi Niaga Digital</p>
+</div>
+</div>
+<!-- Testimonial 2 -->
+<div class="border-2 border-[#09090b] bg-white p-6 md:p-8 shadow-[4px_4px_0px_#09090b] flex flex-col justify-between space-y-6">
+<div class="space-y-3">
+<span class="font-mono-tech text-[11px] font-bold text-zinc-400">[RECORD.END-02]</span>
+<p class="text-base md:text-lg font-medium text-[#09090b] leading-relaxed">
+              "Salah satu marketer terbaik dalam menjaga efisiensi ROAS tanpa mengorbankan volume penjualan. Sangat kolaboratif, transparan dalam reporting mingguan, dan cepat dalam evaluasi creative fatigue."
+            </p>
+</div>
+<div class="border-t-2 border-[#09090b] pt-4 font-mono-tech">
+<p class="font-bold text-sm text-[#09090b]">Sarah Kusuma</p>
+<p class="text-xs text-zinc-500 uppercase">Managing Director &amp; Co-Founder — Retail Brand Group</p>
+</div>
+</div>
+</div>
+</section>
+<!-- 08. HIGH-CONTRAST STATEMENT CTA / KONTAK BANNER -->
+<section class="border-2 border-[#09090b] bg-[#09090b] text-white p-8 md:p-12 shadow-[8px_8px_0px_#00fe66] space-y-8" id="kontak">
+<div class="max-w-3xl space-y-4">
+<div class="inline-flex items-center gap-2 font-mono-tech text-xs bg-zinc-800 text-[#00fe66] border border-zinc-700 px-3 py-1 font-bold uppercase tracking-wider">
+<span class="w-2 h-2 rounded-full bg-[#00fe66]"></span>
+<span>INISIASI KOLABORASI // TAHUN KERJA 2024</span>
+</div>
+<h2 class="font-syne text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight leading-tight">
+          Mari bicarakan kebutuhan marketing &amp; target pertumbuhan bisnis Anda.
+        </h2>
+<p class="text-zinc-400 text-base md:text-lg font-body leading-relaxed">
+          Terbuka untuk diskusi mengenai peran full-time, konsultasi pertumbuhan, atau proyek skala strategis. Respons dijamin dalam 1x24 jam kerja.
+        </p>
+</div>
+<!-- Action Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 pt-6 border-t-2 border-zinc-800">
+<!-- Direct Email -->
+<a class="border-2 border-zinc-700 hover:border-[#00fe66] bg-zinc-900 p-4 transition-all group" href="mailto:aditya.marketer@outlook.com">
+<div class="flex items-center justify-between text-[#00fe66] font-mono-tech text-xs font-bold mb-2">
+<span>[EMAIL]</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</div>
+<p class="font-syne font-bold text-white text-base group-hover:text-[#00fe66] transition-colors truncate">Kirim Email</p>
+<p class="font-mono-tech text-[11px] text-zinc-500 truncate mt-1">aditya.marketer@outlook.com</p>
+</a>
+<!-- LinkedIn -->
+<a class="border-2 border-zinc-700 hover:border-[#00fe66] bg-zinc-900 p-4 transition-all group" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center justify-between text-[#00fe66] font-mono-tech text-xs font-bold mb-2">
+<span>[LINKEDIN]</span>
+<span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</div>
+<p class="font-syne font-bold text-white text-base group-hover:text-[#00fe66] transition-colors truncate">Profil LinkedIn</p>
+<p class="font-mono-tech text-[11px] text-zinc-500 truncate mt-1">linkedin.com/in/adityapratama</p>
+</a>
+<!-- WhatsApp -->
+<a class="border-2 border-zinc-700 hover:border-[#00fe66] bg-zinc-900 p-4 transition-all group" href="https://wa.me/6281200000000" rel="noopener noreferrer" target="_blank">
+<div class="flex items-center justify-between text-[#00fe66] font-mono-tech text-xs font-bold mb-2">
+<span>[WHATSAPP]</span>
+<span class="material-symbols-outlined text-[16px]">chat</span>
+</div>
+<p class="font-syne font-bold text-white text-base group-hover:text-[#00fe66] transition-colors truncate">WhatsApp Chat</p>
+<p class="font-mono-tech text-[11px] text-zinc-500 truncate mt-1">+62 812-3456-7890</p>
+</a>
+<!-- Download CV PDF -->
+<a class="border-2 border-[#00fe66] bg-[#00fe66] text-[#09090b] hover:bg-white p-4 transition-all group" href="#hero">
+<div class="flex items-center justify-between font-mono-tech text-xs font-bold mb-2">
+<span>[DOCUMENT]</span>
+<span class="material-symbols-outlined text-[18px]">download</span>
+</div>
+<p class="font-syne font-bold text-base truncate">Unduh CV PDF</p>
+<p class="font-mono-tech text-[11px] uppercase tracking-wider text-zinc-800 mt-1">LENGKAP // REVISI 2024</p>
+</a>
+</div>
+</section>
+</main>
+<!-- BRUTALIST TECHNICAL FOOTER -->
+<footer class="w-full bg-white border-t-2 border-[#09090b] mt-16">
+<div class="max-w-[1360px] mx-auto px-4 md:px-8 py-8 flex flex-col md:flex-row justify-between items-center gap-6 font-mono-tech text-xs">
+<div class="flex items-center gap-3">
+<span class="w-3 h-3 bg-[#09090b] inline-block"></span>
+<span class="font-bold text-[#09090b]">ADITYA PRATAMA // DIGITAL MARKETER</span>
+<span class="text-zinc-400">© 2024. HAK CIPTA DILINDUNGI.</span>
+</div>
+<div class="flex flex-wrap items-center gap-6 text-zinc-600"><a class="hover:text-[#09090b] transition-colors" href="#tentang">TENTANG</a>
+<a class="hover:text-[#09090b] transition-colors" href="#keahlian">KEAHLIAN</a>
+<a class="hover:text-[#09090b] transition-colors" href="#studi-kasus">STUDI KASUS</a>
+<a class="hover:text-[#09090b] transition-colors" href="#pengalaman">RIWAYAT</a>
+<a class="hover:text-[#09090b] transition-colors" href="#artikel">PUBLIKASI</a>
+<a class="text-[#09090b] font-bold hover:underline" href="#hero">[KEMBALI KE ATAS ↑]</a></div>
+</div>
+</footer>
+<!-- DYNAMIC FILTERING SCRIPT -->
+<script>
+  function setupFilter(groupName, containerId, emptyStateId) {
+    const filterGroup = document.querySelector(`[data-filter-group="${groupName}"]`);
+    if (!filterGroup) return;
+
+    const buttons = filterGroup.querySelectorAll('.filter-btn');
+    const container = document.getElementById(containerId);
+    if (!container) return;
+    const items = container.querySelectorAll('.filter-item');
+    const emptyState = document.getElementById(emptyStateId);
+
+    function applyFilter(targetFilter, clickedBtn) {
+      // Toggle button styles
+      buttons.forEach(btn => {
+        const badge = btn.querySelector('span:last-child');
+        if (btn === clickedBtn) {
+          btn.className = 'filter-btn px-3 py-1.5 bg-[#09090b] text-[#00fe66] border-2 border-[#09090b] font-bold flex items-center gap-2 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer';
+          if (badge) {
+            badge.className = 'bg-zinc-800 text-white text-[10px] px-1 py-0.2 border border-zinc-700';
+          }
+        } else {
+          btn.className = 'filter-btn px-3 py-1.5 bg-white text-[#09090b] border-2 border-[#09090b] font-bold flex items-center gap-2 hover:bg-zinc-100 shadow-[2px_2px_0px_#09090b] transition-all cursor-pointer';
+          if (badge) {
+            badge.className = 'bg-zinc-100 text-zinc-600 text-[10px] px-1 py-0.2 border border-zinc-300';
+          }
+        }
+      });
+
+      let visibleCount = 0;
+      items.forEach(item => {
+        const categories = (item.getAttribute('data-category') || '').split(' ');
+        const matches = targetFilter === 'all' || categories.includes(targetFilter);
+        
+        if (matches) {
+          item.classList.remove('is-hidden');
+          item.style.opacity = '0';
+          item.style.transform = 'translateY(6px)';
+          setTimeout(() => {
+            item.style.opacity = '1';
+            item.style.transform = 'translateY(0)';
+          }, 20);
+          visibleCount++;
+        } else {
+          item.classList.add('is-hidden');
+        }
+      });
+
+      if (emptyState) {
+        if (visibleCount === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+    }
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-filter');
+        applyFilter(target, btn);
+      });
+    });
+  }
+
+  function resetFilter(groupName) {
+    const filterGroup = document.querySelector(`[data-filter-group="${groupName}"]`);
+    if (!filterGroup) return;
+    const allBtn = filterGroup.querySelector('[data-filter="all"]');
+    if (allBtn) allBtn.click();
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setupFilter('cases', 'cases-container', 'cases-empty-state');
+    setupFilter('articles', 'articles-container', 'articles-empty-state');
+  });
+</script>
+</body></html>
