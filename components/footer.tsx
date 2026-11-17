@@ -13,7 +13,7 @@ export function Footer() {
         </div>
         <nav aria-label="Navigasi footer" className="flex flex-wrap items-center justify-center gap-6 text-zinc-600">
           {navLinks.map((l) => (
-            <a key={l.href} href={l.href} className="transition-colors hover:text-ink">
+            <a key={l.href} href={l.href} className="transition-colors duration-200 hover:text-ink">
               {l.label}
             </a>
           ))}
@@ -21,7 +21,7 @@ export function Footer() {
             href={contact.github}
             rel="noopener noreferrer"
             target="_blank"
-            className="transition-colors hover:text-ink"
+            className="transition-colors duration-200 hover:text-ink"
           >
             GITHUB
           </a>
@@ -29,7 +29,7 @@ export function Footer() {
             href={contact.tiktok}
             rel="noopener noreferrer"
             target="_blank"
-            className="transition-colors hover:text-ink"
+            className="transition-colors duration-200 hover:text-ink"
           >
             TIKTOK {contact.socialLabel}
           </a>
@@ -37,7 +37,7 @@ export function Footer() {
             href={contact.instagram}
             rel="noopener noreferrer"
             target="_blank"
-            className="transition-colors hover:text-ink"
+            className="transition-colors duration-200 hover:text-ink"
           >
             INSTAGRAM {contact.socialLabel}
           </a>

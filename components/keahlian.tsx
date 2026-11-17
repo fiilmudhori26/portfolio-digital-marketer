@@ -8,7 +8,7 @@ export function Keahlian() {
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
             [02 // MATRIX KOMPETENSI]
           </span>
-          <h2 className="font-syne text-3xl font-extrabold tracking-tight text-ink">
+          <h2 className="font-syne text-h2 font-extrabold text-ink">
             Keahlian &amp; Kompetensi Inti
           </h2>
         </div>
@@ -22,7 +22,7 @@ export function Keahlian() {
         {skills.map((skill) => (
           <div
             key={skill.id}
-            className="group flex flex-col justify-between bg-white p-6 transition-colors hover:bg-zinc-50"
+            className="group flex flex-col justify-between bg-white p-6 transition-colors duration-200 hover:bg-zinc-50"
           >
             <div className="space-y-3">
               <div className="flex items-center justify-between">
@@ -41,7 +41,7 @@ export function Keahlian() {
                 {skill.description}
               </p>
             </div>
-            <div className="pt-4 font-mono-tech text-[10px] uppercase text-zinc-500">
+            <div className="border-t border-zinc-200 pt-3 font-mono-tech text-[10px] uppercase leading-relaxed text-zinc-500">
               Tags: {skill.tags}
             </div>
           </div>

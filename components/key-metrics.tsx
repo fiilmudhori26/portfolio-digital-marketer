@@ -9,7 +9,7 @@ const cellTone: Record<string, string> = {
 export function KeyMetrics() {
   return (
     <section aria-label="Angka kunci" className="space-y-2">
-      <div className="flex items-center justify-between px-1 font-mono-tech text-[11px] uppercase text-zinc-500">
+      <div className="flex items-center justify-between gap-2 border-b border-zinc-200 pb-2 font-mono-tech text-[11px] uppercase text-zinc-500">
         <span>[LEDGER: METRIK NYATA]</span>
         <span>PENGALAMAN &amp; PROYEK 2024-2026</span>
       </div>
@@ -19,7 +19,7 @@ export function KeyMetrics() {
           return (
             <div
               key={metric.index}
-              className={`flex flex-col justify-between border-ink p-6 md:p-8 ${metric.cellClass} ${cellTone[metric.tone]}`}
+              className={`flex flex-col justify-between border-ink p-5 md:p-7 ${metric.cellClass} ${cellTone[metric.tone]}`}
             >
               <span
                 className={`font-mono-tech text-[11px] uppercase tracking-wider ${
@@ -30,7 +30,7 @@ export function KeyMetrics() {
               </span>
               <div className="my-4 flex items-baseline gap-1">
                 <span
-                  className={`font-syne text-4xl font-extrabold tracking-tight md:text-5xl ${
+                  className={`font-syne text-metric font-extrabold ${
                     dark ? "text-accent" : "text-ink"
                   }`}
                 >

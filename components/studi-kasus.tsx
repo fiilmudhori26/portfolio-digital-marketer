@@ -41,7 +41,7 @@ export function StudiKasus() {
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
             [03 // REKAM JEJAK EKSEKUSI]
           </span>
-          <h2 className="font-syne text-3xl font-extrabold tracking-tight text-ink">
+          <h2 className="font-syne text-h2 font-extrabold text-ink">
             Studi Kasus Terpilih
           </h2>
         </div>
@@ -61,7 +61,7 @@ export function StudiKasus() {
         {visible.map((study) => (
           <article
             key={study.id}
-            className="filter-item border-2 border-ink bg-white shadow-[6px_6px_0px_#09090b]"
+            className="filter-item border-2 border-ink bg-white shadow-[6px_6px_0px_#09090b] transition-shadow duration-200 hover:shadow-[9px_9px_0px_#09090b]"
           >
             {/* Case header meta */}
             <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-ink bg-zinc-100 px-6 py-3 font-mono-tech text-xs">
@@ -76,7 +76,7 @@ export function StudiKasus() {
 
             <div className="space-y-6 p-6 md:p-8">
               <div className="space-y-2">
-                <h3 className="font-syne text-2xl font-extrabold text-ink md:text-3xl">
+                <h3 className="font-syne text-[clamp(1.375rem,1.1rem+1.2vw,1.875rem)] font-extrabold leading-tight text-ink">
                   {study.title}
                 </h3>
                 <p className="font-mono-tech text-sm text-zinc-600">
@@ -92,7 +92,7 @@ export function StudiKasus() {
                       <span className="block font-mono-tech text-[10px] font-semibold uppercase text-accent">
                         {metric.label}
                       </span>
-                      <span className="font-syne text-3xl font-extrabold text-accent">
+                      <span className="font-syne text-[clamp(1.5rem,1.2rem+1.4vw,1.875rem)] font-extrabold text-accent">
                         {metric.value}
                       </span>
                       <span className="mt-1 block font-mono-tech text-[11px] text-zinc-300">
@@ -104,7 +104,7 @@ export function StudiKasus() {
                       <span className="block font-mono-tech text-[10px] font-semibold uppercase text-zinc-500">
                         {metric.label}
                       </span>
-                      <span className="font-syne text-3xl font-extrabold text-ink">
+                      <span className="font-syne text-[clamp(1.5rem,1.2rem+1.4vw,1.875rem)] font-extrabold text-ink">
                         {metric.value}
                       </span>
                       <span className="mt-1 block font-mono-tech text-[11px] text-zinc-500">
@@ -120,7 +120,7 @@ export function StudiKasus() {
                 <span className="block font-mono-tech text-xs font-bold uppercase tracking-wider text-ink">
                   [TINDAKAN STRATEGIS DIEKSEKUSI]:
                 </span>
-                <ul className="list-inside list-disc space-y-1.5 font-mono-tech text-xs text-zinc-700">
+                <ul className="list-inside list-disc space-y-1.5 font-mono-tech text-xs leading-relaxed text-zinc-700 marker:text-ink">
                   {study.actions.map((action) => (
                     <li key={action}>{action}</li>
                   ))}

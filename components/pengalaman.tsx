@@ -9,13 +9,13 @@ export function Pengalaman() {
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
             [04 // RIWAYAT]
           </span>
-          <h2 className="font-syne text-3xl font-extrabold text-ink">Pengalaman & Proyek</h2>
+          <h2 className="font-syne text-h2 font-extrabold text-ink">Pengalaman & Proyek</h2>
         </div>
         <div className="space-y-4">
           {experience.map((item) => (
             <div
               key={item.role}
-              className="space-y-3 border-2 border-ink bg-white p-6 shadow-[4px_4px_0px_#09090b]"
+              className="space-y-3 border-2 border-ink bg-white p-6 shadow-[4px_4px_0px_#09090b] transition-shadow duration-200 hover:shadow-[7px_7px_0px_#09090b]"
             >
               <div className="flex flex-wrap items-start justify-between gap-2 border-b border-zinc-200 pb-2">
                 <div>
@@ -46,13 +46,13 @@ export function Pengalaman() {
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
             [KREDENSIAL RESMI]
           </span>
-          <h2 className="font-syne text-3xl font-extrabold text-ink">Sertifikasi Resmi</h2>
+          <h2 className="font-syne text-h2 font-extrabold text-ink">Sertifikasi Resmi</h2>
         </div>
         <div className="divide-y-2 divide-ink border-2 border-ink bg-white shadow-[4px_4px_0px_#09090b]">
           {certifications.map((cert) => (
             <div
               key={cert.code}
-              className="flex items-center justify-between gap-3 p-4 transition-colors hover:bg-zinc-50"
+              className="flex items-center justify-between gap-3 p-4 transition-colors duration-200 hover:bg-zinc-50"
             >
               <div className="space-y-1">
                 <span className="block font-mono-tech text-[10px] text-zinc-600">

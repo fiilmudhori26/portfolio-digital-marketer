@@ -12,7 +12,7 @@ export function Navbar() {
         {/* Brand monogram */}
         <a
           href="#hero"
-          className="group flex items-center gap-3 border-r-2 border-ink px-5 transition-colors hover:bg-ink hover:text-accent md:px-8"
+          className="group flex items-center gap-3 border-r-2 border-ink px-5 transition-colors duration-200 hover:bg-ink hover:text-accent md:px-8"
         >
           <div className="flex h-8 w-8 items-center justify-center bg-ink font-mono-tech text-xs font-bold tracking-tighter text-white transition-colors group-hover:bg-accent group-hover:text-ink">
             {profile.monogram}

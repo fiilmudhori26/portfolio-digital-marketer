@@ -13,7 +13,7 @@ export function Tentang() {
           <span className="font-mono-tech text-[11px] font-bold uppercase tracking-widest text-zinc-500">
             {about.eyebrow}
           </span>
-          <h2 className="font-syne text-3xl font-extrabold text-ink">{about.title}</h2>
+          <h2 className="font-syne text-h2 font-extrabold text-ink">{about.title}</h2>
           <p className="font-mono-tech text-sm text-zinc-600">{about.caption}</p>
         </div>
         <div className="hidden pt-12 lg:block">
@@ -27,7 +27,7 @@ export function Tentang() {
       {/* Right content & pillars */}
       <div className="space-y-8 p-6 md:p-10 lg:col-span-8">
         <div className="space-y-4">
-          <p className="text-lg font-medium leading-relaxed text-ink md:text-xl">
+          <p className="max-w-[65ch] text-lg font-medium leading-relaxed text-ink md:text-xl md:leading-relaxed">
             {about.lead.prefix}{" "}
             <strong className="bg-ink px-1 font-mono-tech text-white">
               {about.lead.highlightA}
@@ -38,7 +38,7 @@ export function Tentang() {
             </strong>
             {about.lead.suffix}
           </p>
-          <p className="leading-relaxed text-zinc-600">{about.philosophyBody}</p>
+          <p className="max-w-[65ch] leading-relaxed text-zinc-600">{about.philosophyBody}</p>
         </div>
 
         <div className="grid grid-cols-1 border-2 border-ink md:grid-cols-3">
@@ -53,7 +53,7 @@ export function Tentang() {
                 {pillar.index}
               </span>
               <h3 className="font-syne text-base font-bold text-ink">{pillar.title}</h3>
-              <p className="text-xs text-zinc-600">{pillar.description}</p>
+              <p className="text-xs leading-relaxed text-zinc-600">{pillar.description}</p>
             </div>
           ))}
         </div>

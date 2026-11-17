@@ -12,7 +12,7 @@ export function Kontak() {
           <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
           <span>{contact.eyebrow}</span>
         </div>
-        <h2 className="font-syne text-3xl font-extrabold leading-tight tracking-tight sm:text-4xl md:text-5xl">
+        <h2 className="font-syne text-[clamp(1.75rem,1.2rem+2.6vw,3rem)] font-extrabold leading-[1.06] tracking-tight">
           {contact.title}
         </h2>
         <p className="text-base leading-relaxed text-zinc-400 md:text-lg">
@@ -23,7 +23,7 @@ export function Kontak() {
       <div className="grid grid-cols-1 gap-4 border-t-2 border-zinc-800 pt-6 sm:grid-cols-2 lg:grid-cols-4">
         <a
           href={`mailto:${contact.email}`}
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 transition-all hover:border-accent"
+          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
         >
           <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
             <span>[EMAIL]</span>
@@ -43,7 +43,7 @@ export function Kontak() {
           href={contact.linkedin}
           rel="noopener noreferrer"
           target="_blank"
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 transition-all hover:border-accent"
+          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
         >
           <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
             <span>[LINKEDIN]</span>
@@ -63,7 +63,7 @@ export function Kontak() {
           href={contact.whatsapp}
           rel="noopener noreferrer"
           target="_blank"
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 transition-all hover:border-accent"
+          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
         >
           <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
             <span>[WHATSAPP]</span>
@@ -84,7 +84,7 @@ export function Kontak() {
           download
           aria-label="Unduh CV Rahmad Akbar (PDF)"
           title="Unduh CV (PDF)"
-          className="group border-2 border-accent bg-accent p-4 text-ink transition-all hover:bg-white"
+          className="group brutal-hover border-2 border-accent bg-accent p-4 text-ink hover:-translate-y-0.5 hover:bg-white"
         >
           <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold">
             <span>[DOCUMENT]</span>

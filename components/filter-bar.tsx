@@ -31,7 +31,7 @@ export function FilterBar({ legend, options, active, onChange }: FilterBarProps)
             type="button"
             onClick={() => onChange(option.value)}
             aria-pressed={isActive}
-            className={`flex cursor-pointer items-center gap-2 border-2 border-ink px-3 py-1.5 font-bold shadow-[2px_2px_0px_#09090b] transition-all ${
+            className={`brutal-hover flex cursor-pointer items-center gap-2 border-2 border-ink px-3 py-1.5 font-bold shadow-[2px_2px_0px_#09090b] hover:-translate-y-0.5 hover:shadow-[3px_3px_0px_#09090b] ${
               isActive
                 ? "bg-ink text-accent"
                 : "bg-white text-ink hover:bg-zinc-100"

@@ -8,8 +8,8 @@ export function Hero() {
       className="grid grid-cols-1 border-2 border-ink bg-white shadow-[6px_6px_0px_#09090b] lg:grid-cols-12"
     >
       {/* Left column: copy & CTA */}
-      <div className="flex flex-col justify-between space-y-10 p-6 md:p-12 lg:col-span-8 lg:border-r-2 lg:border-ink">
-        <div className="space-y-6">
+      <div className="flex flex-col justify-between gap-10 p-5 sm:p-8 md:p-12 lg:col-span-8 lg:border-r-2 lg:border-ink">
+        <div className="space-y-5 md:space-y-6">
           <div className="inline-flex items-center gap-2 border border-ink bg-zinc-100 px-3 py-1 font-mono-tech text-[11px] font-semibold uppercase tracking-wider">
             <span className="h-1.5 w-1.5 bg-ink" aria-hidden="true" />
             <span>INDEX.PORTFOLIO // 2026</span>
@@ -18,7 +18,7 @@ export function Hero() {
             <p className="font-mono-tech text-xs uppercase tracking-widest text-zinc-500">
               {profile.name} — {profile.role}
             </p>
-            <h1 className="font-syne text-3xl font-extrabold leading-[1.08] tracking-tight text-ink sm:text-4xl md:text-5xl lg:text-[54px]">
+            <h1 className="font-syne text-display font-extrabold text-ink">
               Digital marketer yang bisa{" "}
               <span className="inline-block bg-ink px-2 py-0.5 text-accent">eksekusi konten</span>,{" "}
               <span className="border-b-4 border-ink">sampai jadi</span> studi kasus{" "}
@@ -33,7 +33,7 @@ export function Hero() {
         <div className="flex flex-wrap items-center gap-4 border-t-2 border-ink pt-6">
           <a
             href="#studi-kasus"
-            className="flex items-center gap-3 bg-ink px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-white transition-colors hover:bg-zinc-800"
+            className="brutal-hover flex items-center gap-3 border-2 border-ink bg-ink px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-white shadow-[4px_4px_0px_#00fe66] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00fe66]"
           >
             <span>[03] Telusuri Studi Kasus</span>
             <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
@@ -42,7 +42,7 @@ export function Hero() {
           </a>
           <a
             href="#kontak"
-            className="flex items-center gap-3 border-2 border-ink bg-white px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-ink transition-colors hover:bg-zinc-100"
+            className="brutal-hover flex items-center gap-3 border-2 border-ink bg-white px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-ink hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-100 hover:shadow-[4px_4px_0px_#09090b]"
           >
             <span>Hubungi Saya</span>
             <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
@@ -78,9 +78,9 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="flex-1 space-y-4 p-6 font-mono-tech text-xs">
+        <div className="flex-1 space-y-3 p-5 font-mono-tech text-xs sm:p-6 md:space-y-4">
           {heroDossier.map((cell) => (
-            <div key={cell.label} className="space-y-1 border border-ink bg-white p-3">
+            <div key={cell.label} className="space-y-1 border border-ink bg-white p-3 transition-colors hover:bg-zinc-50">
               <span className="block text-[10px] uppercase tracking-widest text-zinc-500">
                 {cell.label}
               </span>
