@@ -7,9 +7,9 @@ export function Pengalaman() {
       <div className="space-y-6 lg:col-span-7">
         <div className="border-b-2 border-ink pb-3">
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
-            [04 // RIWAYAT KARIR]
+            [04 // RIWAYAT]
           </span>
-          <h2 className="font-syne text-3xl font-extrabold text-ink">Pengalaman Kerja</h2>
+          <h2 className="font-syne text-3xl font-extrabold text-ink">Pengalaman & Proyek</h2>
         </div>
         <div className="space-y-4">
           {experience.map((item) => (
@@ -40,7 +40,7 @@ export function Pengalaman() {
         </div>
       </div>
 
-      {/* Verified certifications */}
+      {/* Sertifikasi */}
       <div className="space-y-6 lg:col-span-5">
         <div className="border-b-2 border-ink pb-3">
           <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
@@ -62,7 +62,7 @@ export function Pengalaman() {
                 <p className="font-mono-tech text-[10px] text-zinc-500">{cert.detail}</p>
               </div>
               <span className="shrink-0 border border-emerald-400 bg-emerald-100 px-2 py-0.5 font-mono-tech text-[10px] font-bold text-emerald-800">
-                VERIFIED
+                LULUS
               </span>
             </div>
           ))}

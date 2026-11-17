@@ -1,4 +1,4 @@
-import { navLinks, profile } from "@/lib/content";
+import { navLinks, profile, contact } from "@/lib/content";
 
 export function Footer() {
   return (
@@ -9,18 +9,40 @@ export function Footer() {
           <span className="font-bold text-ink">
             {`${profile.name.toUpperCase()} // DIGITAL MARKETER`}
           </span>
-          <span className="text-zinc-500">© 2024. HAK CIPTA DILINDUNGI.</span>
+          <span className="text-zinc-500">© 2026. HAK CIPTA DILINDUNGI.</span>
         </div>
         <nav aria-label="Navigasi footer" className="flex flex-wrap items-center justify-center gap-6 text-zinc-600">
-          {navLinks
-            .filter((l) => ["#tentang", "#keahlian", "#studi-kasus", "#pengalaman", "#artikel"].includes(l.href))
-            .map((l) => (
-              <a key={l.href} href={l.href} className="transition-colors hover:text-ink">
-                {l.label}
-              </a>
-            ))}
+          {navLinks.map((l) => (
+            <a key={l.href} href={l.href} className="transition-colors hover:text-ink">
+              {l.label}
+            </a>
+          ))}
+          <a
+            href={contact.github}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="transition-colors hover:text-ink"
+          >
+            GITHUB
+          </a>
+          <a
+            href={contact.tiktok}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="transition-colors hover:text-ink"
+          >
+            TIKTOK {contact.socialLabel}
+          </a>
+          <a
+            href={contact.instagram}
+            rel="noopener noreferrer"
+            target="_blank"
+            className="transition-colors hover:text-ink"
+          >
+            INSTAGRAM {contact.socialLabel}
+          </a>
           <a href="#hero" className="font-bold text-ink hover:underline">
-            [KEMBALI KE ATAS ↑]
+            [KEMBALI KE ATAS]
           </a>
         </nav>
       </div>

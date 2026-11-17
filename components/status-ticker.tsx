@@ -23,7 +23,7 @@ export function StatusTicker() {
         <div className="flex items-center gap-4 text-zinc-400">
           <span className="hidden md:inline">LOC: {profile.location}</span>
           <span className="hidden text-zinc-500 md:inline">|</span>
-          <span className="text-accent">PERFORMANCE &amp; GROWTH OPS</span>
+          <span className="text-accent">CONTENT &amp; DIGITAL MARKETING</span>
         </div>
       </div>
     </aside>

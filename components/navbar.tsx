@@ -22,7 +22,7 @@ export function Navbar() {
               {profile.name.toUpperCase()}
             </span>
             <span className="mt-0.5 font-mono-tech text-[10px] uppercase tracking-widest text-zinc-500 group-hover:text-zinc-300">
-              Growth Specialist
+              {profile.shortRole}
             </span>
           </div>
         </a>
@@ -47,8 +47,8 @@ export function Navbar() {
           <a
             href={profile.cvPath}
             download
-            aria-label="Unduh CV (file placeholder — ganti dengan PDF CV asli Anda)"
-            title="CV placeholder — ganti dengan PDF asli di public/"
+            aria-label="Unduh CV Rahmad Akbar (PDF)"
+            title="Unduh CV (PDF)"
             className="flex items-center justify-center gap-2 bg-ink px-4 font-mono-tech text-xs font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-ink sm:px-6 md:px-8"
           >
             <span>UNDUH CV</span>

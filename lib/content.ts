@@ -1,111 +1,101 @@
 /**
- * Konten terpusat situs portofolio.
- *
- * PLACEHOLDER: Seluruh data pribadi, metrik, studi kasus, pengalaman,
- * sertifikasi, testimoni, dan kontak di bawah ini adalah CONTOH FIKTIF
- * yang dibawa dari desain sumber (design/desktop.html).
- * Ganti dengan data asli Anda sebelum situs dipakai melamar kerja.
+ * Konten terpusat situs portofolio — data asli Rahmad Akbar.
+ * Sumber: CV Rahmad Akbar (Digital Marketing) & profil LinkedIn.
  */
 
-// PLACEHOLDER: ganti dengan data asli Anda
 export const profile = {
-  name: "Aditya Pratama",
-  nameWithTitle: "Aditya Pratama, S.Kom",
-  role: "Senior Growth & Performance Specialist",
-  shortRole: "Growth Architect",
-  monogram: "AP",
-  id: "AP-MKT-88402",
-  location: "Jakarta, ID (WIB/UTC+7)",
-  availability: "Q3 / Q4 2024",
-  headlinePrefix: "Mengubah traffic menjadi konversi lewat",
+  name: "Rahmad Akbar",
+  role: "Digital Marketer & Content Creator",
+  shortRole: "Digital Marketer",
+  monogram: "RA",
+  location: "Jember, Jawa Timur",
+  availability: "Terbuka untuk magang & posisi entry-level",
   subheadline:
-    "Membantu brand berskala berkembang melalui eksekusi data-driven marketing, efisiensi budget iklan tanpa kompromi, dan funnel konversi terukur secara analitis.",
-  cvPath: "/cv-placeholder.txt", // PLACEHOLDER: ganti dengan file PDF CV asli di folder public/
+    "Mahasiswa S1 Ilmu Al-Qur'an dan Tafsir yang merancang kalender konten, menulis copywriting, mengelola media sosial, dan mengedit visual/video (Canva, CapCut) — sekaligus membangun landing page dan kampanye digital lewat web development (Next.js).",
+  cvPath: "/CV_Rahmad_Akbar_Digital_Marketing.pdf",
 } as const;
 
-// PLACEHOLDER: ganti dengan data asli Anda
 export const heroDossier = [
-  { label: "SERTIFIKASI UTAMA", value: "Certified Google & Meta Marketer" },
-  { label: "METODOLOGI EKSEKUSI", value: "Berdasarkan Data, ROI & CAC Terukur" },
-  { label: "STATUS KONTRAK", value: "Terbuka untuk Full-time & Konsultasi" },
+  { label: "FOKUS UTAMA", value: "Content & Social Media" },
+  { label: "KEAHLIAN UNGGULAN", value: "Kalender Konten · Copywriting · Canva/CapCut" },
+  { label: "STATUS", value: "Terbuka untuk magang & entry-level" },
 ] as const;
 
-// PLACEHOLDER: ganti dengan data asli Anda
 export const keyMetrics = [
   {
     index: "01",
-    label: "PENGALAMAN INDUSTRI",
-    value: "4+",
-    unit: "THN",
-    tag: "METRIC.EXP: VERIFIED",
+    label: "ENGAGEMENT KONTEN ORGANIK",
+    value: "+30%",
+    unit: "",
+    tag: "IG · TIKTOK · YOUTUBE (PERSONAL)",
     tone: "light" as const,
     cellClass: "border-r-2 border-b-2 lg:border-b-0",
   },
   {
     index: "02",
-    label: "CAMPAIGN DIKELOLA",
-    value: "30+",
-    unit: "PROJ",
-    tag: "STATUS.ACTIVE_TOTAL",
+    label: "PESERTA SEMINAR NASIONAL",
+    value: "200+",
+    unit: "ORANG",
+    tag: "PROMOSI & PENDAFTARAN 2024",
     tone: "light" as const,
     cellClass: "border-b-2 lg:border-b-0 lg:border-r-2",
   },
   {
     index: "03",
-    label: "RATA-RATA ROAS PAID ADS",
-    value: "4.0x",
-    unit: "AVG",
-    tag: "META & GOOGLE BLENDED",
+    label: "PROGRAM KERJA DI-BRANDING",
+    value: "12",
+    unit: "PROKER",
+    tag: "DEMA MA'HAD ALY 2025-2026",
     tone: "muted" as const,
     cellClass: "border-r-2",
   },
   {
     index: "04",
-    label: "ORGANIC TRAFFIC",
-    value: "+120%",
-    unit: "",
-    tag: "AGGREGATE SEARCH UPLIFT",
+    label: "PRODUK WEB LIVE",
+    value: "10+",
+    unit: "PRODUK",
+    tag: "NEXT.JS · VERCEL · GITHUB",
     tone: "dark" as const,
     cellClass: "",
   },
 ] as const;
 
 export const about = {
-  eyebrow: "[01 // FILOSOFI OPERASIONAL]",
+  eyebrow: "[01 // TENTANG SAYA]",
   title: "Tentang Saya",
-  caption: "Efisiensi alokasi modal dan akurasi atribusi data.",
+  caption: "Mahasiswa, praktisi konten, dan builder.",
   philosophy:
-    "Every rupiah spent is an investment evaluated by CAC to LTV ratio.",
+    "Hafalan 30 juz mengajarkan satu hal: konsistensi mengalahkan intensitas.",
   lead: {
     prefix:
-      "Praktisi pemasaran digital berorientasi hasil dengan rekam jejak mengelola end-to-end campaign performance dan organik. Memadukan analisis analitik mendalam dengan strategi kreatif untuk menurunkan",
-    cac: "Customer Acquisition Cost (CAC)",
-    middle: "dan memaksimalkan",
-    ltv: "Customer Lifetime Value (LTV)",
+      "Mahasiswa S1 Ilmu Al-Qur'an dan Tafsir (Ma'had Aly Nurussalam Mubarok, Jember) dengan pengalaman praktis digital marketing: merancang kalender konten, menulis",
+    highlightA: "copywriting",
+    middle: ", mengelola media sosial, dan mengedit visual/video. Juga menguasai web development untuk mendukung",
+    highlightB: "landing page & kampanye digital",
     suffix: ".",
   },
   philosophyBody:
-    "Berpengalaman dalam orkestrasi lintas platform (Meta Ads, Google Search & Display, TikTok Ads) serta optimalisasi arsitektur situs untuk SEO teknis. Setiap rupiah alokasi media diperlakukan sebagai investasi terukur dengan pengujian hipotesis berkala.",
+    "Terlatih analisis literatur, riset berbasis referensi, dan penulisan terstruktur — bekal yang saya bawa ke copywriting, skrip konten, dan dokumentasi. Mencari posisi entry-level Digital Marketing / Content Creator. Sebagai Hafidz Al-Qur'an 30 juz (2019), saya terbiasa dengan disiplin, konsistensi, dan target jangka panjang: kualitas eksekusi dibangun dari rutinitas yang dijaga setiap hari, bukan dari sprint sesaat.",
   pillars: [
     {
       index: "PILAR // 01",
-      title: "Data-driven Decision",
+      title: "Konsistensi & Disiplin",
       description:
-        "Pengambilan keputusan berbasis atribusi akurat dan data riil.",
+        "Hafidz Al-Qur'an 30 juz (2019); membiasakan murajaah dan eksekusi rutin yang berkelanjutan.",
       tone: "muted" as const,
     },
     {
       index: "PILAR // 02",
-      title: "Continuous A/B Testing",
+      title: "Konten yang Terencana",
       description:
-        "Iterasi terstruktur pada creative copy, hook visual, dan UX landing page.",
+        "Kalender konten mingguan, copywriting sesuai audiens, dan analisis performa postingan.",
       tone: "light" as const,
     },
     {
       index: "PILAR // 03",
-      title: "Full-funnel Optimization",
+      title: "Eksekusi End-to-End",
       description:
-        "Harmonisasi fase awareness (TOFU) hingga retensi pasca-pembelian.",
+        "Dari ide, desain visual, dan edit video, sampai landing page yang di-deploy ke Vercel.",
       tone: "muted" as const,
     },
   ],
@@ -114,71 +104,71 @@ export const about = {
 export const skills = [
   {
     id: "SKILL.01",
-    icon: "search",
-    name: "SEO (Search Engine Optimization)",
+    icon: "calendar_month",
+    name: "Content Planning & Kalender Konten",
     description:
-      "Audit teknis arsitektur web, keyword research intents, on-page optimization, dan link building terstruktur.",
-    tags: "Ahrefs, SEMrush, Technical Audit",
+      "Perencanaan kalender konten mingguan dari ide sampai publikasi, dengan brief dan alur kerja yang jelas.",
+    tags: "Kalender Konten, Brief, Alur Produksi",
   },
   {
     id: "SKILL.02",
-    icon: "ads_click",
-    name: "SEM / Google Ads",
+    icon: "edit_note",
+    name: "Copywriting & Content Writing",
     description:
-      "Pengelolaan Search, Display, dan Performance Max dengan kontrol target CPA, tROAS, serta negative keywords sculpting.",
-    tags: "PMax, Search Ads, Target CPA",
+      "Menulis caption, skrip konten, dan artikel sesuai target audiens — dari hook sampai call to action.",
+    tags: "Caption, Skrip, Artikel",
   },
   {
     id: "SKILL.03",
-    icon: "campaign",
-    name: "Meta Ads",
+    icon: "groups",
+    name: "Social Media & Community",
     description:
-      "Strategi full-funnel (TOFU, MOFU, BOFU), catalog dynamic ads, dan optimalisasi Audience Lookalike di Instagram & Facebook.",
-    tags: "Advantage+, CBO, Retargeting",
+      "Mengelola Instagram, TikTok, dan YouTube: publikasi, branding, dan komunikasi dengan audiens.",
+    tags: "Instagram, TikTok, YouTube",
   },
   {
     id: "SKILL.04",
-    icon: "share",
-    name: "Social Media Marketing",
+    icon: "search",
+    name: "SEO Dasar",
     description:
-      "Perencanaan pilar konten strategis, community growth, dan engagement rate terukur untuk memperkuat brand equity.",
-    tags: "Organic Reach, Content Strategy",
+      "Struktur konten, metadata, dan on-page dasar untuk membantu konten dan halaman lebih mudah ditemukan.",
+    tags: "On-page, Metadata, Struktur Konten",
   },
   {
     id: "SKILL.05",
-    icon: "article",
-    name: "Content Marketing",
+    icon: "design_services",
+    name: "Canva & CapCut",
     description:
-      "Pembuatan copy persuasif berorientasi aksi, artikel SEO bernilai tinggi, dan lead magnet pendukung funnel konversi.",
-    tags: "Copywriting, Lead Magnets",
+      "Desain aset visual (poster, carousel, thumbnail) dan edit video pendek untuk media sosial.",
+    tags: "Poster, Carousel, Short Video",
   },
   {
     id: "SKILL.06",
-    icon: "query_stats",
-    name: "GA4 & GTM Tracking",
+    icon: "campaign",
+    name: "Meta Business Suite",
     description:
-      "Setup custom server-side & client-side events, conversion tracking, dan analisis dashboard data studio analitik mendalam.",
-    tags: "Tag Manager, GA4 Custom Events",
+      "Pengelolaan publikasi dan pemantauan performa konten di ekosistem Facebook & Instagram.",
+    tags: "Facebook, Instagram, Insights",
   },
   {
     id: "SKILL.07",
-    icon: "mail",
-    name: "Email Marketing",
+    icon: "code",
+    name: "Web Dev Pendukung",
     description:
-      "Automasi welcome sequence, segmentasi subscriber berbasis behavior, dan kampanye newsletter retensi berulang.",
-    tags: "Klaviyo, Lifecycle Retention",
+      "Next.js, TypeScript, Tailwind, Supabase, dan Vercel untuk landing page & kampanye digital.",
+    tags: "Next.js, TypeScript, Supabase, Vercel",
   },
   {
     id: "SKILL.08",
-    icon: "smart_toy",
-    name: "Marketing Automation",
+    icon: "table",
+    name: "Excel & Google Sheets",
     description:
-      "Integrasi CRM, nurture workflow otomatis, dan scoring lead untuk mempercepat sales cycle produk berkinerja tinggi.",
-    tags: "HubSpot, Zapier, Webhooks",
+      "Pengelolaan data pendaftaran, rekap, dan laporan sederhana untuk kebutuhan acara & organisasi.",
+    tags: "Data Pendaftaran, Rekap, Laporan",
   },
 ] as const;
 
-export type CaseCategory = "paid-ads" | "seo-organic" | "analytics" | "cro-funnel";
+export type CaseCategory = "konten-sosmed" | "event-organisasi" | "web-seo";
 
 export interface CaseStudy {
   id: string;
@@ -192,262 +182,228 @@ export interface CaseStudy {
   actions: string[];
 }
 
-// PLACEHOLDER: ganti metrik & studi kasus dengan data asli Anda
 export const caseStudies: CaseStudy[] = [
   {
     id: "case-01",
     code: "CASE // 01",
-    client: "D2C E-COMMERCE FASHION",
-    period: "PERIODE: Q2 - Q4 2023 [AUDITED]",
-    title: "E-commerce Fashion: Skalabilitas Revenue & Efisiensi Iklan",
+    client: "PERSONAL PROJECT",
+    period: "JAN 2025 - SEKARANG",
+    title: "Personal Brand IG/TikTok: Kalender Konten & Kenaikan Engagement",
     context:
-      "Brand fashion lokal D2C yang ingin meningkatkan omzet kuartalan dengan efisiensi alokasi media.",
-    categories: ["paid-ads"],
+      "Mengelola akun media sosial sendiri (Instagram, TikTok, YouTube) sebagai latihan end-to-end produksi konten.",
+    categories: ["konten-sosmed"],
     metrics: [
-      { label: "HASIL ROAS", value: "ROAS 4.5x", note: "Baseline sebelum optimasi: 2.1x" },
       {
-        label: "PERTUMBUHAN PENDAPATAN",
-        value: "+65%",
-        note: "Performa kuartal berturut-turut",
+        label: "ENGAGEMENT",
+        value: "+30%",
+        note: "Kenaikan engagement konten organik",
+        highlight: true,
       },
       {
-        label: "EFISIENSI BIAYA AKUISISI",
-        value: "-28% CPA",
-        note: "Biaya konversi tertekan signifikan",
-        highlight: true,
+        label: "PLATFORM DIKELOLA",
+        value: "3",
+        note: "Instagram · TikTok · YouTube",
+      },
+      {
+        label: "ALAT UTAMA",
+        value: "Canva/CapCut",
+        note: "Visual & video pendek",
       },
     ],
     actions: [
-      "Restrukturisasi kampanye Meta Ads dengan dynamic catalog ads tersegmen berdasarkan kategori minat produk.",
-      "Pengujian terstruktur pada 15+ variasi creative ad (UGC hooks, clean product display, dan customer review carousel).",
-      "Optimasi alur checkout abandonment via retargeting terpersonalisasi melalui integrasi email sequence & SMS automation.",
+      "Merencanakan kalender konten mingguan dan analisis performa postingan secara berkala.",
+      "Menulis copywriting caption dan skrip konten sesuai target audiens.",
+      "Mendesain aset visual (poster, carousel, thumbnail) dengan Canva dan mengedit video pendek dengan CapCut.",
     ],
   },
   {
     id: "case-02",
     code: "CASE // 02",
-    client: "B2B ENTERPRISE SAAS",
-    period: "PERIODE: Q1 - Q3 2023 [AUDITED]",
-    title: "SaaS B2B: Akuisisi Qualified Leads Melalui Paid Search & Inbound",
+    client: "KELOMPOK 03 KKN — MA'HAD ALY NURUSSALAM MUBAROK",
+    period: "JAN 2026 - FEB 2026",
+    title: "KKN Kelompok 03: Dokumentasi & Branding Program Desa",
     context:
-      "Startup teknologi B2B membutuhkan peningkatan supply demo booking dari target pengambil keputusan level C-Level.",
-    categories: ["cro-funnel", "analytics"],
+      "Kelompok 03 KKN membutuhkan dokumentasi kegiatan dan materi promosi untuk sosialisasi program ke masyarakat desa.",
+    categories: ["konten-sosmed"],
     metrics: [
       {
-        label: "AKUISISI DEMO BOOKING",
-        value: "+85% Lead",
-        note: "Peningkatan volume demo terverifikasi",
+        label: "KONTEN DIBUAT",
+        value: "Foto · Video · Artikel",
+        note: "Dokumentasi kegiatan KKN",
       },
       {
-        label: "RASIO KONVERSI LANDING PAGE",
-        value: "3.2% → 7.4%",
-        note: "Optimasi UX & lead form flow",
+        label: "MATERI PROMOSI",
+        value: "Poster & Pamflet",
+        note: "Dibuat dengan Canva",
       },
       {
-        label: "KUALITAS PROSPEK (SQL)",
-        value: "+40% Score",
-        note: "Peningkatan Sales Qualified Leads",
+        label: "KANAL PUBLIKASI",
+        value: "Media Sosial",
+        note: "Branding kelompok ke masyarakat desa",
         highlight: true,
       },
     ],
     actions: [
-      "Penargetan kata kunci high-intent di Google Search dengan negative keyword sculpting presisi untuk memfilter traffic non-B2B.",
-      "Pembuatan landing page interaktif dengan tracking Google Tag Manager presisi untuk mengukur micro-interaction sebelum booking.",
-      "Implementasi LinkedIn Ads retargeting pada pengambil keputusan tingkat manajerial dan C-Suite.",
+      "Memproduksi konten dokumentasi kegiatan KKN (foto, video, artikel) dan mempublikasikannya ke media sosial untuk branding kelompok.",
+      "Membuat materi promosi digital (poster kegiatan, pamflet program) dengan Canva untuk sosialisasi ke masyarakat desa.",
     ],
   },
   {
     id: "case-03",
     code: "CASE // 03",
-    client: "F&B RETAIL MULTI-OUTLET",
-    period: "DURASI: 6 BULAN AUDIT [KAMPANYE LOKAL]",
-    title: "F&B Lokal: Dominasi Visibilitas Organik & Local Search",
+    client: "PANITIA SEMINAR NASIONAL KEISLAMAN",
+    period: "2024",
+    title: "Seminar Nasional Keislaman: Promosi 200+ Peserta & Pengelolaan Pendaftaran",
     context:
-      "Jaringan kedai kopi modern dengan 8 outlet yang membutuhkan peningkatan foot-traffic dan pesanan delivery via optimasi lokal.",
-    categories: ["seo-organic"],
+      "Panitia membutuhkan promosi yang menjangkau ratusan peserta dan pengelolaan data pendaftaran yang rapi.",
+    categories: ["event-organisasi"],
     metrics: [
       {
-        label: "PERTUMBUHAN ORGANIK",
-        value: "+120% Traffic",
-        note: "Kenaikan impresi & klik search",
-      },
-      {
-        label: "INTERAKSI GOOGLE MAPS",
-        value: "+45% Aksi",
-        note: "Panggilan, rute jalan, & klik web",
-      },
-      {
-        label: "AUDIENCE SOCIAL FOLLOWING",
-        value: "+35,000",
-        note: "Pertumbuhan follower aktif organik",
+        label: "PESERTA",
+        value: "200+",
+        note: "Jangkauan promosi acara",
         highlight: true,
+      },
+      {
+        label: "PENDAFTARAN",
+        value: "Google Sheets",
+        note: "Data 200+ peserta dikelola panitia",
+      },
+      {
+        label: "LAPORAN",
+        value: "Post-Event",
+        note: "Dokumentasi & laporan untuk benchmark tahun berikutnya",
       },
     ],
     actions: [
-      "Optimasi Google Business Profile untuk 8 lokasi outlet dengan review management otomatis dan penyesuaian geotag gambar.",
-      "Produksi konten video lokal di TikTok dan Instagram Reels berbasis geolokasi mikro sesuai target demografi outlet.",
-      "Strategi artikel panduan kuliner lokal bernilai SEO tinggi yang sukses menembus Peringkat 1 Google.",
+      "Membuat materi promosi dan publikasi acara untuk 200+ peserta melalui media sosial dan grup komunitas.",
+      "Mengelola data pendaftaran 200+ peserta (Google Sheets) dan komunikasi informasi acara ke peserta.",
+      "Mendokumentasikan jalannya acara dan menyusun laporan post-event untuk benchmark tahun berikutnya.",
+    ],
+  },
+  {
+    id: "case-04",
+    code: "CASE // 04",
+    client: "PERSONAL PROJECT",
+    period: "MEI 2025 - SEKARANG",
+    title: "Web Developer: 10+ Produk Web Live dengan SEO Dasar",
+    context:
+      "Membangun produk web sendiri sebagai sarana digitalisasi layanan sekaligus mendukung funnel digital dan user experience.",
+    categories: ["web-seo"],
+    metrics: [
+      {
+        label: "PRODUK WEB LIVE",
+        value: "10+",
+        note: "Deploy di Vercel, source di GitHub",
+        highlight: true,
+      },
+      {
+        label: "STACK UTAMA",
+        value: "Next.js",
+        note: "TypeScript · Supabase/Prisma · Tailwind",
+      },
+      {
+        label: "SEO",
+        value: "Dasar",
+        note: "Struktur konten & metadata",
+      },
+    ],
+    actions: [
+      "Membangun aplikasi web (Next.js + Supabase) sebagai sarana digitalisasi layanan, mendukung funnel digital dan user experience.",
+      "Menerapkan SEO dasar (struktur konten, metadata) pada setiap produk yang dirilis.",
+      "Deploy ke Vercel dengan version control GitHub dan dokumentasi (README) yang konsisten.",
     ],
   },
 ];
 
-// PLACEHOLDER: ganti dengan data asli Anda
 export const experience = [
   {
-    role: "Senior Digital Marketer",
-    company: "Growth & Performance Agency",
-    period: "2022 - SEKARANG",
+    role: "Digital Marketing & Dokumentasi",
+    company: "Kelompok 03 KKN — Ma'had Aly Nurussalam Mubarok",
+    period: "JAN 2026 - FEB 2026",
+    current: false,
+    description:
+      "Memproduksi konten dokumentasi kegiatan KKN (foto, video, artikel) dan mempublikasikannya ke media sosial untuk branding kelompok. Membuat materi promosi digital (poster kegiatan, pamflet program) dengan Canva untuk sosialisasi ke masyarakat desa.",
+  },
+  {
+    role: "Web Developer (Personal Project)",
+    company: "Mandiri",
+    period: "MEI 2025 - SEKARANG",
     current: true,
     description:
-      "Memimpin tim ad ops, mengelola budget media bulanan berskala puluhan hingga ratusan juta, serta melaporkan metrik performa langsung ke stakeholder tingkat C-Level.",
+      "Membangun 10+ aplikasi web (Next.js, TypeScript, Supabase/Prisma) yang live di Vercel — dari skema data sampai deploy — dengan SEO dasar dan version control GitHub untuk mendukung funnel digital dan user experience.",
   },
   {
-    role: "Performance Marketing Specialist",
-    company: "D2C Fast-Growing E-Commerce",
-    period: "2020 - 2022",
-    current: false,
+    role: "Content Creator & Social Media Manager (Personal Project)",
+    company: "Mandiri",
+    period: "JAN 2025 - SEKARANG",
+    current: true,
     description:
-      "Mengeksekusi campaign harian di Meta dan Google, optimasi funnel konversi landing page, serta pengujian A/B kreatifitas visual berkala untuk menekan CAC.",
+      "Mengelola akun media sosial (Instagram, TikTok, YouTube) dengan perencanaan kalender konten mingguan dan analisis performa postingan. Menulis copywriting caption dan skrip konten sesuai target audiens — meningkatkan engagement 30% dan reach organik. Mendesain aset visual (poster, carousel, thumbnail) dengan Canva dan mengedit video pendek dengan CapCut.",
   },
   {
-    role: "SEO & Content Associate",
-    company: "Digital Media Network",
-    period: "2019 - 2020",
+    role: "Sekretaris & Humas Media Sosial",
+    company: "DEMA Ma'had Aly Nurussalam Mubarok",
+    period: "JAN 2025 - JAN 2026",
     current: false,
     description:
-      "Riset keyword intent, penulisan artikel berperingkat tinggi di mesin pencari Google, dan audit on-page arsitektur web secara berkala.",
+      "Mengelola publikasi dan branding kegiatan organisasi di media sosial untuk 12 program kerja. Menyusun materi promosi digital (poster, flyer) dan menjembatani komunikasi antara pengurus, dosen, dan pihak eksternal.",
+  },
+  {
+    role: "Content & Promosi Acara",
+    company: "Panitia Seminar Nasional Keislaman",
+    period: "2024",
+    current: false,
+    description:
+      "Membuat materi promosi dan publikasi acara untuk 200+ peserta melalui media sosial dan grup komunitas. Mengelola data pendaftaran 200+ peserta (Google Sheets), komunikasi informasi acara ke peserta, mendokumentasikan jalannya acara, dan menyusun laporan post-event untuk benchmark tahun berikutnya.",
   },
 ] as const;
 
-// PLACEHOLDER: ganti ID kredensial dengan data asli Anda
 export const certifications = [
   {
-    code: "[CERT-01 // GOOGLE ADS]",
-    name: "Google Ads Search & Display Certified",
-    detail: "ID: GOOG-ADS-89421",
+    code: "[CERT-01 // FREECODECAMP]",
+    name: "Responsive Web Design",
+    detail: "freeCodeCamp (PDF)",
   },
   {
-    code: "[CERT-02 // ANALYTICS]",
-    name: "Google Analytics 4 (GA4) Certification",
-    detail: "ID: GA4-CORP-44021",
+    code: "[CERT-02 // FREECODECAMP]",
+    name: "Front End Development Libraries",
+    detail: "freeCodeCamp (PDF)",
   },
   {
-    code: "[CERT-03 // META BLUEPRINT]",
-    name: "Meta Certified Digital Marketing Associate",
-    detail: "Meta Blueprint Credential Verified",
+    code: "[CERT-03 // UI/UX]",
+    name: "UI/UX Design",
+    detail: "Sertifikat (PDF)",
   },
   {
-    code: "[CERT-04 // INBOUND & CRM]",
-    name: "HubSpot Inbound & Email Automation",
-    detail: "HubSpot Academy Credential",
+    code: "[CERT-04 // PRESTASI]",
+    name: "Prestasi",
+    detail: "Sertifikat (PDF)",
   },
 ] as const;
-
-export interface Article {
-  id: string;
-  tag: string;
-  readTime: string;
-  date: string;
-  title: string;
-  excerpt: string;
-  metric: string;
-  metricHighlight: boolean;
-  categories: CaseCategory[];
-  href: string;
-}
-
-// PLACEHOLDER: ganti dengan artikel/tulisan asli Anda (atau hapus section jika belum ada)
-export const articles: Article[] = [
-  {
-    id: "article-01",
-    tag: "[ESSAY // ATTRIBUTION]",
-    readTime: "6 MIN READ",
-    date: "FEB 2024",
-    title:
-      "Membangun Server-Side GTM & CAPI: Mengatasi Atribusi Buta Pasca iOS 14.5",
-    excerpt:
-      "Panduan implementasi pelacakan first-party untuk memulihkan akurasi sinyal konversi Meta Ads hingga 92% dan menekan blended CAC.",
-    metric: "+24% SIGNAL ACCURACY",
-    metricHighlight: true,
-    categories: ["analytics"],
-    href: "#", // PLACEHOLDER: ganti dengan URL artikel asli
-  },
-  {
-    id: "article-02",
-    tag: "[PLAYBOOK // PAID ADS]",
-    readTime: "8 MIN READ",
-    date: "NOV 2023",
-    title:
-      "Dekonstruksi Creative Fatigue: Framework Modular DCT untuk Skalasi Iklan D2C",
-    excerpt:
-      "Metodologi rotasi 3 visual hooks, 2 core copy angles, dan 2 CTA untuk menjaga ROAS stabil di atas 4.0x pada skala budget 9 digit.",
-    metric: "TESTED ON 100+ ADS",
-    metricHighlight: false,
-    categories: ["paid-ads"],
-    href: "#", // PLACEHOLDER: ganti dengan URL artikel asli
-  },
-  {
-    id: "article-03",
-    tag: "[CASE // FUNNEL CRO]",
-    readTime: "5 MIN READ",
-    date: "AGU 2023",
-    title:
-      "Anatomi Landing Page B2B High-Converting: Mengurangi Friction Form Tanpa Mengorbankan Kualitas MQL",
-    excerpt:
-      "Eksperimen A/B testing multi-step lead capture yang meningkatkan conversion rate form dari 3.2% ke 7.4% pada audiens enterprise.",
-    metric: "+131% CVR UPLIFT",
-    metricHighlight: true,
-    categories: ["cro-funnel"],
-    href: "#", // PLACEHOLDER: ganti dengan URL artikel asli
-  },
-];
-
-export const articleFilters: { label: string; value: CaseCategory | "all" }[] = [
-  { label: "SEMUA [ALL]", value: "all" },
-  { label: "ANALYTICS", value: "analytics" },
-  { label: "PAID ADS", value: "paid-ads" },
-  { label: "CRO & FUNNEL", value: "cro-funnel" },
-  { label: "SEO & ORGANIC", value: "seo-organic" },
-];
 
 export const caseFilters: { label: string; value: CaseCategory | "all" }[] = [
   { label: "SEMUA [ALL]", value: "all" },
-  { label: "PAID ADS", value: "paid-ads" },
-  { label: "SEO & ORGANIC", value: "seo-organic" },
-  { label: "ANALYTICS", value: "analytics" },
-  { label: "CRO & FUNNEL", value: "cro-funnel" },
+  { label: "KONTEN & SOCIAL MEDIA", value: "konten-sosmed" },
+  { label: "EVENT & ORGANISASI", value: "event-organisasi" },
+  { label: "WEB & SEO", value: "web-seo" },
 ];
 
-// PLACEHOLDER: ganti dengan data asli Anda
-export const testimonials = [
-  {
-    id: "RECORD.END-01",
-    quote:
-      "Kemampuan analisis data dan eksekusi campaign Aditya sangat rapi. Selalu mampu menerjemahkan target bisnis menjadi rencana aksi marketing yang terukur dan efisien secara alokasi budget.",
-    name: "Rian Hidayat",
-    role: "VP of Growth Marketing - PT Inovasi Niaga Digital",
-  },
-  {
-    id: "RECORD.END-02",
-    quote:
-      "Salah satu marketer terbaik dalam menjaga efisiensi ROAS tanpa mengorbankan volume penjualan. Sangat kolaboratif, transparan dalam reporting mingguan, dan cepat dalam evaluasi creative fatigue.",
-    name: "Sarah Kusuma",
-    role: "Managing Director & Co-Founder - Retail Brand Group",
-  },
-] as const;
-
-// PLACEHOLDER: ganti dengan data kontak asli Anda
 export const contact = {
-  eyebrow: "INISIASI KOLABORASI // TAHUN KERJA 2024",
-  title: "Mari bicarakan kebutuhan marketing & target pertumbuhan bisnis Anda.",
+  eyebrow: "[05 // KONTAK]",
+  title: "Terbuka untuk magang & posisi entry-level. Mari terhubung.",
   subtitle:
-    "Terbuka untuk diskusi mengenai peran full-time, konsultasi pertumbuhan, atau proyek skala strategis. Respons dijamin dalam 1x24 jam kerja.",
-  email: "aditya.marketer@outlook.com",
-  linkedin: "https://linkedin.com/in/adityapratama", // PLACEHOLDER: ganti dengan URL profil asli
-  linkedinLabel: "linkedin.com/in/adityapratama",
-  whatsapp: "https://wa.me/6281200000000", // PLACEHOLDER: ganti dengan nomor asli
-  whatsappLabel: "+62 812-0000-0000",
-  cvNote: "LENGKAP // REVISI 2024",
+    "Mencari posisi entry-level Digital Marketing / Content Creator / Content Writer — magang maupun full-time, remote maupun onsite di Jember dan sekitarnya. Biasanya membalas dalam 1x24 jam.",
+  email: "rahmad26akbar@gmail.com",
+  linkedin: "https://linkedin.com/in/rahmadakbar24",
+  linkedinLabel: "linkedin.com/in/rahmadakbar24",
+  whatsapp: "https://wa.me/62882008321724",
+  whatsappLabel: "+62 882 0083 21724",
+  github: "https://github.com/fiilmudhori26",
+  tiktok: "https://tiktok.com/@_arvyn24",
+  instagram: "https://www.instagram.com/_arvyn24",
+  socialLabel: "@_arvyn24",
+  cvNote: "CV TERBARU // PDF",
 } as const;
 
 export const navLinks = [
@@ -455,6 +411,5 @@ export const navLinks = [
   { index: "02", label: "KEAHLIAN", href: "#keahlian" },
   { index: "03", label: "STUDI KASUS", href: "#studi-kasus" },
   { index: "04", label: "RIWAYAT", href: "#pengalaman" },
-  { index: "05", label: "PUBLIKASI", href: "#artikel" },
-  { index: "06", label: "KONTAK", href: "#kontak" },
+  { index: "05", label: "KONTAK", href: "#kontak" },
 ] as const;

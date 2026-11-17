@@ -82,8 +82,8 @@ export function Kontak() {
         <a
           href={profile.cvPath}
           download
-          aria-label="Unduh CV (file placeholder — ganti dengan PDF CV asli Anda)"
-          title="CV placeholder — ganti dengan PDF asli di public/"
+          aria-label="Unduh CV Rahmad Akbar (PDF)"
+          title="Unduh CV (PDF)"
           className="group border-2 border-accent bg-accent p-4 text-ink transition-all hover:bg-white"
         >
           <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold">
@@ -92,7 +92,7 @@ export function Kontak() {
               download
             </span>
           </div>
-          <p className="truncate font-syne text-base font-bold">Unduh CV (Placeholder)</p>
+          <p className="truncate font-syne text-base font-bold">Unduh CV</p>
           <p className="mt-1 font-mono-tech text-[11px] uppercase tracking-wider text-zinc-800">
             {contact.cvNote}
           </p>

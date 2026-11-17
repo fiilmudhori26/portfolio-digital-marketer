@@ -6,8 +6,6 @@ import { Tentang } from "@/components/tentang";
 import { Keahlian } from "@/components/keahlian";
 import { StudiKasus } from "@/components/studi-kasus";
 import { Pengalaman } from "@/components/pengalaman";
-import { Artikel } from "@/components/artikel";
-import { Testimoni } from "@/components/testimoni";
 import { Kontak } from "@/components/kontak";
 import { Footer } from "@/components/footer";
 
@@ -23,8 +21,6 @@ export default function Home() {
         <Keahlian />
         <StudiKasus />
         <Pengalaman />
-        <Artikel />
-        <Testimoni />
         <Kontak />
       </main>
       <Footer />

@@ -21,9 +21,9 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Aditya Pratama — Senior Growth & Performance Marketer",
+  title: "Rahmad Akbar — Digital Marketer & Content Creator",
   description:
-    "Portofolio Aditya Pratama, digital marketer berbasis Jakarta: SEO, paid ads (Meta & Google), content marketing, dan analytics. Studi kasus dengan metrik terukur untuk recruiter dan hiring manager.",
+    "Portofolio Rahmad Akbar, digital marketer & content creator entry-level dari Jember, Jawa Timur: content planning, copywriting, social media, SEO dasar, dan web development (Next.js). Terbuka untuk magang & posisi entry-level.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

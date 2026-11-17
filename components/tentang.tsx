@@ -30,11 +30,11 @@ export function Tentang() {
           <p className="text-lg font-medium leading-relaxed text-ink md:text-xl">
             {about.lead.prefix}{" "}
             <strong className="bg-ink px-1 font-mono-tech text-white">
-              {about.lead.cac}
+              {about.lead.highlightA}
             </strong>{" "}
             {about.lead.middle}{" "}
             <strong className="bg-accent px-1 font-mono-tech text-ink">
-              {about.lead.ltv}
+              {about.lead.highlightB}
             </strong>
             {about.lead.suffix}
           </p>

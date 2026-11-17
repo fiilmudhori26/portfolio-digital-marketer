@@ -6,3 +6,8 @@ node_modules/
 out/
 .env*
 *.tsbuildinfo
+.vercel
+
+# lokal, jangan di-commit (persona placeholder & brief AI)
+design/
+BRIEF.md

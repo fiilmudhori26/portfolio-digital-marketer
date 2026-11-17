@@ -46,7 +46,7 @@ export function StudiKasus() {
           </h2>
         </div>
         <div className="bg-ink px-3 py-1 font-mono-tech text-xs font-bold text-accent">
-          DATA RESMI // TERUJI &amp; TERVERIFIKASI
+          DATA NYATA // TANPA METRIK FIKSI
         </div>
       </div>
 

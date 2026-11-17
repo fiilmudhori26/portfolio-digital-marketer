@@ -11,7 +11,7 @@ interface FilterBarProps {
   onChange: (value: string) => void;
 }
 
-/** Bar filter brutalist — dipakai oleh section Studi Kasus & Publikasi. */
+/** Bar filter brutalist - dipakai oleh section Studi Kasus. */
 export function FilterBar({ legend, options, active, onChange }: FilterBarProps) {
   return (
     <div

@@ -10,8 +10,8 @@ export function KeyMetrics() {
   return (
     <section aria-label="Angka kunci" className="space-y-2">
       <div className="flex items-center justify-between px-1 font-mono-tech text-[11px] uppercase text-zinc-500">
-        <span>[LEDGER: CORE_PERFORMANCE_METRICS]</span>
-        <span>INDEXED FROM 2020-2024</span>
+        <span>[LEDGER: METRIK NYATA]</span>
+        <span>PENGALAMAN &amp; PROYEK 2024-2026</span>
       </div>
       <div className="grid grid-cols-2 border-2 border-ink bg-white shadow-[4px_4px_0px_#09090b] lg:grid-cols-4">
         {keyMetrics.map((metric) => {

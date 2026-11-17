@@ -13,7 +13,7 @@ export function Keahlian() {
           </h2>
         </div>
         <p className="font-mono-tech text-xs text-zinc-500">
-          8 CORE DISCIPLINES // FULL-STACK DIGITAL ACQUISITION
+          8 KEAHLIAN // KONTEN, SOSMED &amp; WEB PENDUKUNG
         </p>
       </div>
 
