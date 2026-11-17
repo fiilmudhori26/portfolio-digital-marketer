@@ -35,121 +35,112 @@ export function StudiKasus() {
   );
 
   return (
-    <section id="studi-kasus" aria-label="Studi kasus" className="space-y-8">
-      <div className="flex flex-col justify-between gap-4 border-b-2 border-ink pb-4 md:flex-row md:items-end">
-        <div>
-          <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
-            [03 // REKAM JEJAK EKSEKUSI]
-          </span>
-          <h2 className="font-syne text-h2 font-extrabold text-ink">
+    <section
+      id="studi-kasus"
+      aria-label="Studi kasus"
+      className="space-y-10 border-t border-hairline pt-10"
+    >
+      <div className="flex flex-col justify-between gap-4 md:flex-row md:items-end">
+        <div className="space-y-4">
+          <h2 className="eyebrow">Studi Kasus</h2>
+          <p className="font-serif-display text-h2 font-medium text-ink">
             Studi Kasus Terpilih
-          </h2>
+          </p>
         </div>
-        <div className="bg-ink px-3 py-1 font-mono-tech text-xs font-bold text-accent">
-          DATA NYATA // TANPA METRIK FIKSI
-        </div>
+        <p className="max-w-[18rem] text-[11px] uppercase leading-relaxed tracking-[0.14em] text-muted">
+          Data nyata, tanpa metrik fiksi
+        </p>
       </div>
 
       <FilterBar
-        legend="FILTER_BY:"
+        legend="Filter"
         options={options}
         active={active}
         onChange={(v) => setActive(v as FilterValue)}
       />
 
-      <div className="space-y-8">
+      <div>
         {visible.map((study) => (
           <article
             key={study.id}
-            className="filter-item border-2 border-ink bg-white shadow-[6px_6px_0px_#09090b] transition-shadow duration-200 hover:shadow-[9px_9px_0px_#09090b]"
+            className="fade-item space-y-6 border-t border-hairline py-10 first:border-t-0 first:pt-2"
           >
-            {/* Case header meta */}
-            <div className="flex flex-wrap items-center justify-between gap-2 border-b-2 border-ink bg-zinc-100 px-6 py-3 font-mono-tech text-xs">
-              <div className="flex items-center gap-2">
-                <span className="bg-ink px-2 py-0.5 font-bold text-white">
-                  {study.code}
-                </span>
-                <span className="font-bold text-ink">{study.client}</span>
-              </div>
-              <span className="text-zinc-600">{study.period}</span>
+            {/* Meta line */}
+            <div className="flex flex-wrap items-baseline justify-between gap-2 text-[11px] uppercase tracking-[0.14em] text-muted">
+              <p className="max-w-[60ch]">
+                <span className="font-semibold text-ink">{study.client}</span>
+                <span aria-hidden="true"> · </span>
+                {study.code}
+              </p>
+              <span>{study.period}</span>
             </div>
 
-            <div className="space-y-6 p-6 md:p-8">
-              <div className="space-y-2">
-                <h3 className="font-syne text-[clamp(1.375rem,1.1rem+1.2vw,1.875rem)] font-extrabold leading-tight text-ink">
-                  {study.title}
-                </h3>
-                <p className="font-mono-tech text-sm text-zinc-600">
-                  <span className="font-bold text-ink">Konteks:</span> {study.context}
-                </p>
-              </div>
+            <div className="space-y-3">
+              <h3 className="font-serif-display max-w-4xl text-[clamp(1.5rem,1.15rem+1.6vw,2.25rem)] font-medium leading-[1.12] text-ink">
+                {study.title}
+              </h3>
+              <p className="max-w-[65ch] leading-relaxed text-muted">
+                <span className="font-semibold text-ink">Konteks — </span>
+                {study.context}
+              </p>
+            </div>
 
-              {/* Impact ledger */}
-              <div className="grid grid-cols-1 gap-px border-2 border-ink bg-ink md:grid-cols-3">
-                {study.metrics.map((metric) =>
-                  metric.highlight ? (
-                    <div key={metric.label} className="bg-ink p-4 text-white">
-                      <span className="block font-mono-tech text-[10px] font-semibold uppercase text-accent">
-                        {metric.label}
-                      </span>
-                      <span className="font-syne text-[clamp(1.5rem,1.2rem+1.4vw,1.875rem)] font-extrabold text-accent">
-                        {metric.value}
-                      </span>
-                      <span className="mt-1 block font-mono-tech text-[11px] text-zinc-300">
-                        {metric.note}
-                      </span>
-                    </div>
-                  ) : (
-                    <div key={metric.label} className="bg-zinc-50 p-4">
-                      <span className="block font-mono-tech text-[10px] font-semibold uppercase text-zinc-500">
-                        {metric.label}
-                      </span>
-                      <span className="font-syne text-[clamp(1.5rem,1.2rem+1.4vw,1.875rem)] font-extrabold text-ink">
-                        {metric.value}
-                      </span>
-                      <span className="mt-1 block font-mono-tech text-[11px] text-zinc-500">
-                        {metric.note}
-                      </span>
-                    </div>
-                  ),
-                )}
-              </div>
+            {/* Hasil: angka besar tanpa kotak, dipisah hairline */}
+            <dl className="grid grid-cols-1 gap-y-5 border-y border-hairline py-6 sm:grid-cols-3 sm:gap-y-0">
+              {study.metrics.map((metric, i) => (
+                <div
+                  key={metric.label}
+                  className={`space-y-1.5 sm:px-6 ${
+                    i > 0 ? "border-t border-hairline pt-5 sm:border-t-0 sm:pt-0 sm:border-l" : ""
+                  } ${i === 0 ? "sm:pl-0" : ""}`}
+                >
+                  <dt className="text-[10px] font-semibold uppercase tracking-[0.14em] text-muted">
+                    {metric.label}
+                  </dt>
+                  <dd
+                    className={`font-serif-display text-[clamp(1.35rem,1.05rem+1.3vw,1.9rem)] font-medium leading-tight ${
+                      metric.highlight ? "text-accent" : "text-ink"
+                    }`}
+                  >
+                    {metric.value}
+                  </dd>
+                  <dd className="text-xs leading-snug text-muted">{metric.note}</dd>
+                </div>
+              ))}
+            </dl>
 
-              {/* Action list */}
-              <div className="space-y-2 border border-ink bg-zinc-50 p-4">
-                <span className="block font-mono-tech text-xs font-bold uppercase tracking-wider text-ink">
-                  [TINDAKAN STRATEGIS DIEKSEKUSI]:
-                </span>
-                <ul className="list-inside list-disc space-y-1.5 font-mono-tech text-xs leading-relaxed text-zinc-700 marker:text-ink">
-                  {study.actions.map((action) => (
-                    <li key={action}>{action}</li>
-                  ))}
-                </ul>
-              </div>
+            {/* Aksi */}
+            <div className="space-y-2">
+              <p className="eyebrow">Tindakan Strategis</p>
+              <ul className="max-w-[75ch] space-y-2 text-sm leading-relaxed text-ink">
+                {study.actions.map((action) => (
+                  <li key={action} className="flex gap-3">
+                    <span aria-hidden="true" className="text-accent">
+                      —
+                    </span>
+                    <span>{action}</span>
+                  </li>
+                ))}
+              </ul>
             </div>
           </article>
         ))}
 
         {visible.length === 0 && (
-          <div className="space-y-3 border-2 border-dashed border-ink bg-white p-8 text-center md:p-12">
-            <div className="mx-auto flex h-12 w-12 items-center justify-center border-2 border-ink bg-zinc-100 font-mono-tech font-bold text-ink">
-              <span className="material-symbols-outlined text-[24px]" aria-hidden="true">
-                folder_off
-              </span>
-            </div>
-            <h4 className="font-syne text-lg font-bold text-ink">
-              DATA_NOT_FOUND // HASIL KOSONG
-            </h4>
-            <p className="mx-auto max-w-md font-mono-tech text-xs text-zinc-500">
-              Tidak ditemukan studi kasus untuk filter kategori ini. Pilih kategori lain
-              atau kembalikan ke SEMUA [ALL] untuk menampilkan seluruh arsip.
+          <div className="space-y-4 border-t border-hairline py-14 text-center">
+            <h3 className="font-serif-display text-2xl font-medium text-ink">
+              Tidak ada studi kasus
+            </h3>
+            <p className="mx-auto max-w-md text-sm leading-relaxed text-muted">
+              Tidak ditemukan studi kasus untuk filter kategori ini. Pilih
+              kategori lain atau kembalikan ke semua untuk menampilkan seluruh arsip.
             </p>
             <button
               type="button"
               onClick={() => setActive("all")}
-              className="mt-2 cursor-pointer border border-ink bg-ink px-4 py-2 font-mono-tech text-xs font-bold uppercase tracking-wider text-accent transition-colors hover:bg-accent hover:text-ink"
+              className="transition-ui cursor-pointer rounded-sm border border-accent px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.12em] text-accent hover:bg-accent hover:text-paper"
             >
-              RESET_FILTER [ALL]
+              Tampilkan Semua
             </button>
           </div>
         )}

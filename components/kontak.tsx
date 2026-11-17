@@ -1,102 +1,79 @@
 import { contact, profile } from "@/lib/content";
 
+const channels = [
+  { label: "Email", value: contact.email, href: `mailto:${contact.email}` },
+  {
+    label: "LinkedIn",
+    value: contact.linkedinLabel,
+    href: contact.linkedin,
+    external: true,
+  },
+  {
+    label: "WhatsApp",
+    value: contact.whatsappLabel,
+    href: contact.whatsapp,
+    external: true,
+  },
+];
+
 export function Kontak() {
   return (
     <section
       id="kontak"
       aria-label="Kontak"
-      className="space-y-8 border-2 border-ink bg-ink p-8 text-white shadow-[8px_8px_0px_#00fe66] md:p-12"
+      className="border-t border-hairline pt-12 md:pt-16"
     >
-      <div className="max-w-3xl space-y-4">
-        <div className="inline-flex items-center gap-2 border border-zinc-700 bg-zinc-800 px-3 py-1 font-mono-tech text-xs font-bold uppercase tracking-wider text-accent">
-          <span className="h-2 w-2 rounded-full bg-accent" aria-hidden="true" />
-          <span>{contact.eyebrow}</span>
+      <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+        {/* Kiri: headline */}
+        <div className="space-y-6 lg:col-span-7">
+          <h2 className="eyebrow">Kontak</h2>
+          <p className="font-serif-display text-[clamp(1.9rem,1.4rem+2.4vw,3.1rem)] font-medium leading-[1.08] text-ink">
+            {contact.title}
+          </p>
+          <p className="max-w-xl leading-relaxed text-muted">
+            {contact.subtitle}
+          </p>
+          <a
+            href={profile.cvPath}
+            download
+            aria-label="Unduh CV Rahmad Akbar (PDF)"
+            title="Unduh CV (PDF)"
+            className="transition-ui inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-paper hover:bg-[#0c5a41]"
+          >
+            Unduh CV
+            <span aria-hidden="true">↓</span>
+          </a>
         </div>
-        <h2 className="font-syne text-[clamp(1.75rem,1.2rem+2.6vw,3rem)] font-extrabold leading-[1.06] tracking-tight">
-          {contact.title}
-        </h2>
-        <p className="text-base leading-relaxed text-zinc-400 md:text-lg">
-          {contact.subtitle}
-        </p>
-      </div>
 
-      <div className="grid grid-cols-1 gap-4 border-t-2 border-zinc-800 pt-6 sm:grid-cols-2 lg:grid-cols-4">
-        <a
-          href={`mailto:${contact.email}`}
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
-        >
-          <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
-            <span>[EMAIL]</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              arrow_outward
-            </span>
-          </div>
-          <p className="truncate font-syne text-base font-bold text-white transition-colors group-hover:text-accent">
-            Kirim Email
-          </p>
-          <p className="mt-1 truncate font-mono-tech text-[11px] text-zinc-400">
-            {contact.email}
-          </p>
-        </a>
-
-        <a
-          href={contact.linkedin}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
-        >
-          <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
-            <span>[LINKEDIN]</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              arrow_outward
-            </span>
-          </div>
-          <p className="truncate font-syne text-base font-bold text-white transition-colors group-hover:text-accent">
-            Profil LinkedIn
-          </p>
-          <p className="mt-1 truncate font-mono-tech text-[11px] text-zinc-400">
-            {contact.linkedinLabel}
-          </p>
-        </a>
-
-        <a
-          href={contact.whatsapp}
-          rel="noopener noreferrer"
-          target="_blank"
-          className="group border-2 border-zinc-700 bg-zinc-900 p-4 brutal-hover hover:-translate-y-0.5 hover:border-accent"
-        >
-          <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold text-accent">
-            <span>[WHATSAPP]</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              chat
-            </span>
-          </div>
-          <p className="truncate font-syne text-base font-bold text-white transition-colors group-hover:text-accent">
-            WhatsApp Chat
-          </p>
-          <p className="mt-1 truncate font-mono-tech text-[11px] text-zinc-400">
-            {contact.whatsappLabel}
-          </p>
-        </a>
-
-        <a
-          href={profile.cvPath}
-          download
-          aria-label="Unduh CV Rahmad Akbar (PDF)"
-          title="Unduh CV (PDF)"
-          className="group brutal-hover border-2 border-accent bg-accent p-4 text-ink hover:-translate-y-0.5 hover:bg-white"
-        >
-          <div className="mb-2 flex items-center justify-between font-mono-tech text-xs font-bold">
-            <span>[DOCUMENT]</span>
-            <span className="material-symbols-outlined text-[18px]" aria-hidden="true">
-              download
-            </span>
-          </div>
-          <p className="truncate font-syne text-base font-bold">Unduh CV</p>
-          <p className="mt-1 font-mono-tech text-[11px] uppercase tracking-wider text-zinc-800">
-            {contact.cvNote}
-          </p>
-        </a>
+        {/* Kanan: daftar kanal sebagai link editorial */}
+        <div className="lg:col-span-5">
+          <ul className="divide-y divide-hairline border-y border-hairline">
+            {channels.map((channel) => (
+              <li key={channel.label}>
+                <a
+                  href={channel.href}
+                  {...(channel.external
+                    ? { rel: "noopener noreferrer", target: "_blank" }
+                    : {})}
+                  className="group flex items-baseline justify-between gap-6 py-5"
+                >
+                  <span className="space-y-1">
+                    <span className="eyebrow block">{channel.label}</span>
+                    <span className="block text-sm font-medium text-ink transition-colors duration-200 group-hover:text-accent">
+                      {channel.value}
+                    </span>
+                  </span>
+                  <span
+                    aria-hidden="true"
+                    className="arrow-nudge text-muted group-hover:text-accent"
+                  >
+                    &#8599;
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
     </section>
   );

@@ -1,21 +1,16 @@
 import type { Metadata } from "next";
-import { Syne, Inter, JetBrains_Mono } from "next/font/google";
+import { Newsreader, Inter } from "next/font/google";
 import "./globals.css";
 
-const syne = Syne({
-  variable: "--font-syne",
+const newsreader = Newsreader({
+  variable: "--font-newsreader",
   subsets: ["latin"],
-  weight: ["700", "800"],
+  style: ["normal", "italic"],
+  axes: ["opsz"],
 });
 
 const inter = Inter({
   variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
 });
@@ -28,9 +23,9 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="id" className={`${syne.variable} ${inter.variable} ${jetbrainsMono.variable} antialiased`}>
-      <body className="min-h-screen border-t-4 border-ink bg-paper text-ink">
-        {/* Material Symbols Outlined - dipakai untuk ikon di desain sumber */}
+    <html lang="id" className={`${newsreader.variable} ${inter.variable} antialiased`}>
+      <body className="min-h-screen bg-paper text-ink">
+        {/* Material Symbols Outlined - ikon untuk keahlian */}
         {/* eslint-disable-next-line @next/next/no-page-custom-font */}
         <link
           rel="stylesheet"

@@ -5,92 +5,79 @@ export function Hero() {
     <section
       id="hero"
       aria-label="Hero"
-      className="grid grid-cols-1 border-2 border-ink bg-white shadow-[6px_6px_0px_#09090b] lg:grid-cols-12"
+      className="grid grid-cols-1 gap-12 pt-4 md:pt-8 lg:grid-cols-12 lg:gap-16"
     >
-      {/* Left column: copy & CTA */}
-      <div className="flex flex-col justify-between gap-10 p-5 sm:p-8 md:p-12 lg:col-span-8 lg:border-r-2 lg:border-ink">
-        <div className="space-y-5 md:space-y-6">
-          <div className="inline-flex items-center gap-2 border border-ink bg-zinc-100 px-3 py-1 font-mono-tech text-[11px] font-semibold uppercase tracking-wider">
-            <span className="h-1.5 w-1.5 bg-ink" aria-hidden="true" />
-            <span>INDEX.PORTFOLIO // 2026</span>
-          </div>
-          <div className="space-y-3">
-            <p className="font-mono-tech text-xs uppercase tracking-widest text-zinc-500">
-              {profile.name} — {profile.role}
-            </p>
-            <h1 className="font-syne text-display font-extrabold text-ink">
-              Digital marketer yang bisa{" "}
-              <span className="inline-block bg-ink px-2 py-0.5 text-accent">eksekusi konten</span>,{" "}
-              <span className="border-b-4 border-ink">sampai jadi</span> studi kasus{" "}
-              <span className="underline decoration-2 underline-offset-4">nyata</span>.
-            </h1>
-          </div>
-          <p className="max-w-2xl text-base leading-relaxed text-zinc-600 md:text-lg">
-            {profile.subheadline}
-          </p>
-        </div>
+      {/* Kolom kiri: copy & CTA */}
+      <div className="flex flex-col justify-center gap-8 lg:col-span-7">
+        <p className="eyebrow">
+          {profile.role} · {profile.location}
+        </p>
 
-        <div className="flex flex-wrap items-center gap-4 border-t-2 border-ink pt-6">
+        <h1 className="font-serif-display text-display font-medium text-ink">
+          Digital marketer yang bisa{" "}
+          <em className="italic text-accent">eksekusi konten</em>, sampai jadi
+          studi kasus{" "}
+          <span className="underline decoration-hairline decoration-2 underline-offset-8">
+            nyata
+          </span>
+          .
+        </h1>
+
+        <p className="max-w-xl text-base leading-relaxed text-muted md:text-lg">
+          {profile.subheadline}
+        </p>
+
+        <div className="flex flex-wrap items-center gap-x-8 gap-y-4 pt-2">
           <a
             href="#studi-kasus"
-            className="brutal-hover flex items-center gap-3 border-2 border-ink bg-ink px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-white shadow-[4px_4px_0px_#00fe66] hover:-translate-x-0.5 hover:-translate-y-0.5 hover:shadow-[6px_6px_0px_#00fe66]"
+            className="transition-ui inline-flex items-center gap-2 rounded-sm bg-accent px-6 py-3 text-xs font-semibold uppercase tracking-[0.12em] text-paper hover:bg-[#0c5a41]"
           >
-            <span>[03] Telusuri Studi Kasus</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              arrow_downward
-            </span>
+            Telusuri Studi Kasus
+            <span aria-hidden="true">↓</span>
           </a>
           <a
             href="#kontak"
-            className="brutal-hover flex items-center gap-3 border-2 border-ink bg-white px-6 py-3.5 font-mono-tech text-xs font-bold uppercase tracking-wider text-ink hover:-translate-x-0.5 hover:-translate-y-0.5 hover:bg-zinc-100 hover:shadow-[4px_4px_0px_#09090b]"
+            className="link-editorial inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.12em] text-ink"
           >
-            <span>Hubungi Saya</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              east
-            </span>
+            Hubungi Saya
+            <span aria-hidden="true">&rarr;</span>
           </a>
         </div>
       </div>
 
-      {/* Right column: profil ringkas */}
-      <div className="flex flex-col justify-between border-t-2 border-ink bg-zinc-50 lg:col-span-4 lg:border-t-0">
-        <div className="flex items-center gap-4 border-b-2 border-ink bg-white p-6">
-          <div
-            aria-hidden="true"
-            className="flex h-16 w-16 shrink-0 select-none items-center justify-center border-2 border-ink bg-zinc-200 font-syne text-2xl font-extrabold text-ink"
-          >
-            {profile.monogram}
-          </div>
-          <div>
-            <div className="flex items-center gap-2">
-              <span className="font-syne text-lg font-bold">{profile.name}</span>
-              <span className="relative flex h-2.5 w-2.5" title={profile.availability}>
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
-                <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-emerald-500" />
-              </span>
+      {/* Kolom kanan: dossier sebagai definition list hairline */}
+      <div className="flex flex-col justify-center lg:col-span-5">
+        <div className="border-y border-hairline py-6">
+          <div className="flex items-baseline justify-between gap-4 pb-5">
+            <div>
+              <p className="font-serif-display text-2xl font-semibold tracking-tight text-ink">
+                {profile.name}
+              </p>
+              <p className="mt-1 text-xs font-medium uppercase tracking-[0.16em] text-muted">
+                {profile.role}
+              </p>
             </div>
-            <p className="font-mono-tech text-[11px] uppercase text-zinc-600">
-              {profile.role}
-            </p>
-            <p className="mt-0.5 font-mono-tech text-[10px] text-zinc-600">
-              {profile.location}
-            </p>
+            <span
+              className="h-2 w-2 shrink-0 rounded-full bg-accent"
+              aria-hidden="true"
+            />
           </div>
-        </div>
 
-        <div className="flex-1 space-y-3 p-5 font-mono-tech text-xs sm:p-6 md:space-y-4">
-          {heroDossier.map((cell) => (
-            <div key={cell.label} className="space-y-1 border border-ink bg-white p-3 transition-colors hover:bg-zinc-50">
-              <span className="block text-[10px] uppercase tracking-widest text-zinc-500">
-                {cell.label}
-              </span>
-              <span className="font-bold text-ink">{cell.value}</span>
-            </div>
-          ))}
-        </div>
+          <dl className="divide-y divide-hairline border-t border-hairline">
+            {heroDossier.map((cell) => (
+              <div
+                key={cell.label}
+                className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-6"
+              >
+                <dt className="eyebrow">{cell.label}</dt>
+                <dd className="text-sm leading-relaxed text-ink">{cell.value}</dd>
+              </div>
+            ))}
+          </dl>
 
-        <div className="border-t-2 border-ink bg-zinc-100 p-4 text-center font-mono-tech text-[10px] uppercase tracking-wider text-zinc-500">
-          {profile.availability}
+          <p className="border-t border-hairline pt-5 text-sm leading-relaxed text-muted">
+            {profile.availability}
+          </p>
         </div>
       </div>
     </section>

@@ -1,4 +1,3 @@
-import { StatusTicker } from "@/components/status-ticker";
 import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/hero";
 import { KeyMetrics } from "@/components/key-metrics";
@@ -12,9 +11,8 @@ import { Footer } from "@/components/footer";
 export default function Home() {
   return (
     <>
-      <StatusTicker />
       <Navbar />
-      <main className="mx-auto max-w-[1360px] space-y-16 px-4 py-8 md:space-y-24 md:px-8 md:py-12">
+      <main className="mx-auto max-w-[1200px] space-y-20 px-5 py-10 sm:px-8 md:space-y-28 md:py-14 lg:px-12">
         <Hero />
         <KeyMetrics />
         <Tentang />

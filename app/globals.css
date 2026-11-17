@@ -1,10 +1,11 @@
 @import "tailwindcss";
 
 @theme {
-  --color-paper: #fafafa;
-  --color-ink: #09090b;
-  --color-accent: #00fe66;
-  --color-secondary: #10b981;
+  --color-paper: #FAFAF9;
+  --color-ink: #111111;
+  --color-muted: #6B7280;
+  --color-hairline: #E5E4E0;
+  --color-accent: #0F6B4F;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -19,77 +20,117 @@ section[id] {
 
 body {
   font-family: var(--font-inter), -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #fafafa;
-  /* Graph-paper dots: subtle canvas, brutalist grid feel */
-  background-image: radial-gradient(circle, #e7e7ea 1.1px, transparent 1.1px);
-  background-size: 22px 22px;
-  color: #09090b;
+  background-color: #FAFAF9;
+  color: #111111;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
 
-.font-syne {
-  font-family: var(--font-syne), sans-serif;
-  letter-spacing: -0.035em;
+/* ---------- Editorial type system ---------- */
+
+.font-serif-display {
+  font-family: var(--font-newsreader), Georgia, "Times New Roman", serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
   text-wrap: balance;
 }
 
-.font-mono-tech {
-  font-family: var(--font-jetbrains-mono), monospace;
-}
-
-/* Heading scale — satu sumber kebenaran lewat clamp() */
 .text-display {
-  font-size: clamp(1.875rem, 1.1rem + 3.4vw, 3.375rem);
-  line-height: 1.04;
-  letter-spacing: -0.035em;
+  font-size: clamp(2.6rem, 1.45rem + 5vw, 4.25rem);
+  line-height: 1.02;
+  letter-spacing: -0.025em;
+  text-wrap: balance;
 }
 
 .text-h2 {
-  font-size: clamp(1.5rem, 1.15rem + 1.5vw, 2.125rem);
-  line-height: 1.12;
-  letter-spacing: -0.03em;
+  font-size: clamp(1.9rem, 1.45rem + 2vw, 2.65rem);
+  line-height: 1.06;
+  letter-spacing: -0.022em;
+  text-wrap: balance;
 }
 
 .text-metric {
-  font-size: clamp(2rem, 1.4rem + 2.4vw, 2.875rem);
+  font-size: clamp(2.35rem, 1.8rem + 2.4vw, 3.4rem);
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.03em;
 }
 
-/* Focus ring yang konsisten & terlihat (brutalist: aksen di atas ink) */
+/* Kecil kapital + tracking lebar — dipakai hemat (3–4 label per seksi) */
+.eyebrow {
+  font-size: 0.6875rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+/* Link editorial: underline offset muncul saat hover */
+.link-editorial {
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+  transition:
+    text-decoration-color 0.18s ease,
+    color 0.18s ease;
+}
+
+.link-editorial:hover {
+  color: var(--color-accent);
+  text-decoration-color: var(--color-accent);
+}
+
+/* ---------- Fokus keyboard ---------- */
+
 :focus-visible {
-  outline: 3px solid var(--color-accent);
-  outline-offset: 2px;
-  box-shadow: 0 0 0 5px var(--color-ink);
-  border-radius: 0;
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 ::selection {
-  background-color: #09090b;
-  color: #00fe66;
+  background-color: var(--color-accent);
+  color: var(--color-paper);
 }
 
-/* Micro-interactions: cepat (150–200ms), hormati reduced motion */
-.brutal-hover {
+/* ---------- Micro-interactions (150–200ms, hormati reduced motion) ---------- */
+
+.fade-item {
   transition:
-    transform 0.18s ease,
-    box-shadow 0.18s ease,
-    background-color 0.18s ease,
+    opacity 0.25s ease,
+    transform 0.25s ease;
+}
+
+.transition-ui {
+  transition:
     color 0.18s ease,
+    background-color 0.18s ease,
     border-color 0.18s ease;
 }
 
-@media (prefers-reduced-motion: reduce) {
-  .brutal-hover,
-  .filter-item {
-    transition: none;
+/* Panah eksternal: nudge ke kanan atas saat hover/focus (mati saat reduced motion) */
+.arrow-nudge {
+  transition:
+    transform 0.2s ease,
+    color 0.2s ease;
+  transform: translate(0, 0);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .group:hover .arrow-nudge {
+    transform: translate(0.125rem, -0.125rem);
   }
 }
 
-.filter-item {
-  transition:
-    opacity 0.25s ease,
-    transform 0.25s ease,
-    box-shadow 0.2s ease;
+@media (prefers-reduced-motion: reduce) {
+  .fade-item,
+  .transition-ui,
+  .link-editorial,
+  .arrow-nudge {
+    transition: none;
+  }
+
+  .arrow-nudge {
+    transform: none;
+  }
 }

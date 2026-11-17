@@ -7,54 +7,40 @@ export function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b-2 border-ink bg-white">
-      <div className="mx-auto flex min-h-[64px] max-w-[1360px] items-stretch justify-between">
-        {/* Brand monogram */}
-        <a
-          href="#hero"
-          className="group flex items-center gap-3 border-r-2 border-ink px-5 transition-colors duration-200 hover:bg-ink hover:text-accent md:px-8"
-        >
-          <div className="flex h-8 w-8 items-center justify-center bg-ink font-mono-tech text-xs font-bold tracking-tighter text-white transition-colors group-hover:bg-accent group-hover:text-ink">
-            {profile.monogram}
-          </div>
-          <div className="flex flex-col">
-            <span className="font-syne text-base font-extrabold leading-none tracking-tight">
-              {profile.name.toUpperCase()}
-            </span>
-            <span className="mt-0.5 font-mono-tech text-[10px] uppercase tracking-widest text-zinc-500 group-hover:text-zinc-300">
-              {profile.shortRole}
-            </span>
-          </div>
+    <header className="sticky top-0 z-50 w-full border-b border-hairline bg-paper/85 backdrop-blur-md">
+      <div className="mx-auto flex min-h-[60px] max-w-[1200px] items-center justify-between gap-4 px-5 sm:px-8 lg:px-12">
+        {/* Brand */}
+        <a href="#hero" className="group flex items-baseline gap-3 py-4">
+          <span className="font-serif-display text-lg font-semibold tracking-tight text-ink transition-colors duration-200 group-hover:text-accent">
+            {profile.name}
+          </span>
+          <span className="hidden text-[11px] font-medium uppercase tracking-[0.16em] text-muted sm:inline">
+            {profile.shortRole}
+          </span>
         </a>
 
         {/* Desktop nav */}
-        <nav
-          aria-label="Navigasi utama"
-          className="hidden items-stretch font-mono-tech text-xs font-semibold tracking-wider lg:flex"
-        >
+        <nav aria-label="Navigasi utama" className="hidden items-center gap-7 lg:flex">
           {navLinks.map((link) => (
             <a
               key={link.href}
               href={link.href}
-              className="flex items-center border-r border-ink px-5 transition-colors hover:bg-ink hover:text-white"
+              className="link-editorial text-[11px] font-semibold uppercase tracking-[0.14em] text-ink"
             >
-              {`${link.index} // ${link.label}`}
+              {link.label}
             </a>
           ))}
         </nav>
 
-        <div className="flex items-stretch">
+        <div className="flex items-center gap-2">
           <a
             href={profile.cvPath}
             download
             aria-label="Unduh CV Rahmad Akbar (PDF)"
             title="Unduh CV (PDF)"
-            className="flex items-center justify-center gap-2 bg-ink px-4 font-mono-tech text-xs font-bold uppercase tracking-wider text-accent transition-all hover:bg-accent hover:text-ink sm:px-6 md:px-8"
+            className="transition-ui rounded-sm border border-ink/25 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.14em] text-ink hover:border-accent hover:text-accent"
           >
-            <span>UNDUH CV</span>
-            <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-              terminal
-            </span>
+            Unduh CV
           </a>
           {/* Mobile toggle */}
           <button
@@ -63,11 +49,31 @@ export function Navbar() {
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? "Tutup menu navigasi" : "Buka menu navigasi"}
-            className="flex w-12 items-center justify-center border-l-2 border-ink bg-white text-ink transition-colors hover:bg-zinc-100 lg:hidden"
+            className="transition-ui flex h-10 w-10 items-center justify-center rounded-sm text-ink hover:bg-hairline/60 lg:hidden"
           >
-            <span className="material-symbols-outlined" aria-hidden="true">
-              {open ? "close" : "menu"}
-            </span>
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+              aria-hidden="true"
+            >
+              {open ? (
+                <path
+                  d="M5 5l10 10M15 5L5 15"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                />
+              ) : (
+                <path
+                  d="M3 6h14M3 10h14M3 14h14"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                />
+              )}
+            </svg>
           </button>
         </div>
       </div>
@@ -77,21 +83,19 @@ export function Navbar() {
         <nav
           id="mobile-nav"
           aria-label="Navigasi mobile"
-          className="border-t-2 border-ink bg-white lg:hidden"
+          className="border-t border-hairline bg-paper lg:hidden"
         >
-          <ul className="divide-y divide-zinc-200 font-mono-tech text-xs font-semibold uppercase tracking-wider">
+          <ul className="mx-auto max-w-[1200px] divide-y divide-hairline px-5 py-2 sm:px-8">
             {navLinks.map((link) => (
               <li key={link.href}>
                 <a
                   href={link.href}
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-between px-6 py-4 transition-colors hover:bg-ink hover:text-accent"
+                  className="flex items-center justify-between py-3.5 text-xs font-semibold uppercase tracking-[0.14em] text-ink transition-colors duration-200 hover:text-accent"
                 >
-                  <span>
-                    {`${link.index} // ${link.label}`}
-                  </span>
-                  <span className="material-symbols-outlined text-[16px]" aria-hidden="true">
-                    arrow_forward
+                  <span>{link.label}</span>
+                  <span aria-hidden="true" className="text-muted">
+                    &rarr;
                   </span>
                 </a>
               </li>

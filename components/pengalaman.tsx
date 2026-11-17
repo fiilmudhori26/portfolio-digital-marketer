@@ -2,71 +2,76 @@ import { experience, certifications } from "@/lib/content";
 
 export function Pengalaman() {
   return (
-    <section id="pengalaman" aria-label="Pengalaman dan sertifikasi" className="grid grid-cols-1 gap-8 lg:grid-cols-12">
-      {/* Career milestones */}
-      <div className="space-y-6 lg:col-span-7">
-        <div className="border-b-2 border-ink pb-3">
-          <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
-            [04 // RIWAYAT]
-          </span>
-          <h2 className="font-syne text-h2 font-extrabold text-ink">Pengalaman & Proyek</h2>
-        </div>
+    <section
+      id="pengalaman"
+      aria-label="Pengalaman dan sertifikasi"
+      className="grid grid-cols-1 gap-12 border-t border-hairline pt-10 lg:grid-cols-12"
+    >
+      {/* Timeline pengalaman */}
+      <div className="space-y-8 lg:col-span-7">
         <div className="space-y-4">
-          {experience.map((item) => (
-            <div
-              key={item.role}
-              className="space-y-3 border-2 border-ink bg-white p-6 shadow-[4px_4px_0px_#09090b] transition-shadow duration-200 hover:shadow-[7px_7px_0px_#09090b]"
-            >
-              <div className="flex flex-wrap items-start justify-between gap-2 border-b border-zinc-200 pb-2">
-                <div>
-                  <h3 className="font-syne text-lg font-bold text-ink">{item.role}</h3>
-                  <p className="font-mono-tech text-xs uppercase text-zinc-500">
-                    {item.company}
-                  </p>
-                </div>
-                <span
-                  className={`font-mono-tech text-xs font-bold px-2 py-0.5 ${
-                    item.current ? "bg-ink text-accent" : "bg-zinc-200 text-ink"
-                  }`}
-                >
-                  {item.period}
-                </span>
-              </div>
-              <p className="text-sm leading-relaxed text-zinc-700">
-                {item.description}
-              </p>
-            </div>
-          ))}
+          <h2 className="eyebrow">Riwayat</h2>
+          <p className="font-serif-display text-h2 font-medium text-ink">
+            Pengalaman &amp; Proyek
+          </p>
         </div>
+
+        <ol className="border-l border-hairline">
+          {experience.map((item) => (
+            <li
+              key={item.role}
+              className="relative grid grid-cols-1 gap-1 py-6 pl-6 first:pt-1 sm:grid-cols-[7.5rem_1fr] sm:gap-6 sm:pl-8"
+            >
+              {/* Titik timeline */}
+              <span
+                aria-hidden="true"
+                className={`absolute -left-[5px] top-7 h-2.5 w-2.5 rounded-full ${
+                  item.current ? "bg-accent" : "bg-hairline"
+                }`}
+              />
+              <p className="text-[10px] font-semibold uppercase leading-relaxed tracking-[0.12em] text-muted sm:pt-1">
+                {item.period}
+              </p>
+              <div className="space-y-1.5">
+                <h3 className="font-serif-display text-xl font-semibold leading-snug text-ink">
+                  {item.role}
+                </h3>
+                <p className="text-[11px] font-medium uppercase tracking-[0.14em] text-muted">
+                  {item.company}
+                </p>
+                <p className="text-sm leading-relaxed text-muted">
+                  {item.description}
+                </p>
+              </div>
+            </li>
+          ))}
+        </ol>
       </div>
 
-      {/* Sertifikasi */}
-      <div className="space-y-6 lg:col-span-5">
-        <div className="border-b-2 border-ink pb-3">
-          <span className="font-mono-tech text-xs font-bold uppercase tracking-widest text-zinc-500">
-            [KREDENSIAL RESMI]
-          </span>
-          <h2 className="font-syne text-h2 font-extrabold text-ink">Sertifikasi Resmi</h2>
+      {/* Sertifikasi: list sederhana dengan hairline */}
+      <div className="space-y-8 lg:col-span-5">
+        <div className="space-y-4">
+          <h2 className="eyebrow">Kredensial</h2>
+          <p className="font-serif-display text-h2 font-medium text-ink">
+            Sertifikasi
+          </p>
         </div>
-        <div className="divide-y-2 divide-ink border-2 border-ink bg-white shadow-[4px_4px_0px_#09090b]">
+
+        <ul className="divide-y divide-hairline border-y border-hairline">
           {certifications.map((cert) => (
-            <div
+            <li
               key={cert.code}
-              className="flex items-center justify-between gap-3 p-4 transition-colors duration-200 hover:bg-zinc-50"
+              className="flex items-baseline justify-between gap-6 py-5"
             >
               <div className="space-y-1">
-                <span className="block font-mono-tech text-[10px] text-zinc-600">
-                  {cert.code}
-                </span>
-                <p className="font-syne text-sm font-bold text-ink">{cert.name}</p>
-                <p className="font-mono-tech text-[10px] text-zinc-500">{cert.detail}</p>
+                <h3 className="font-medium leading-snug text-ink">
+                  {cert.name}
+                </h3>
+                <p className="text-xs text-muted">{cert.detail}</p>
               </div>
-              <span className="shrink-0 border border-emerald-400 bg-emerald-100 px-2 py-0.5 font-mono-tech text-[10px] font-bold text-emerald-800">
-                LULUS
-              </span>
-            </div>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );
