@@ -3,6 +3,7 @@ import { Hero } from "@/components/hero";
 import { KeyMetrics } from "@/components/key-metrics";
 import { Tentang } from "@/components/tentang";
 import { Keahlian } from "@/components/keahlian";
+import { WorkBanner } from "@/components/work-banner";
 import { StudiKasus } from "@/components/studi-kasus";
 import { Pengalaman } from "@/components/pengalaman";
 import { Kontak } from "@/components/kontak";
@@ -17,6 +18,7 @@ export default function Home() {
         <KeyMetrics />
         <Tentang />
         <Keahlian />
+        <WorkBanner />
         <StudiKasus />
         <Pengalaman />
         <Kontak />

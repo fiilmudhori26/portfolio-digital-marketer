@@ -1,4 +1,5 @@
 import { heroDossier, profile } from "@/lib/content";
+import { EditorialFigure } from "./editorial-figure";
 
 export function Hero() {
   return (
@@ -45,9 +46,18 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Kolom kanan: dossier sebagai definition list hairline */}
-      <div className="flex flex-col justify-center lg:col-span-5">
-        <div className="border-y border-hairline py-6">
+      {/* Kolom kanan: foto editorial + dossier ringkas */}
+      <div className="flex flex-col justify-center gap-6 lg:col-span-5">
+        <EditorialFigure
+          src="/images/hero.jpg"
+          alt="Laptop menampilkan dasbor analytics dengan grafik performa konten di atas meja kerja"
+          caption="Membaca data performa konten"
+          priority
+          sizes="(min-width: 1200px) 500px, (min-width: 1024px) 40vw, 100vw"
+          aspectClass="aspect-[4/3]"
+        />
+
+        <div className="border-y border-hairline py-5">
           <div className="flex items-baseline justify-between gap-4 pb-5">
             <div>
               <p className="font-serif-display text-2xl font-semibold tracking-tight text-ink">
@@ -67,7 +77,7 @@ export function Hero() {
             {heroDossier.map((cell) => (
               <div
                 key={cell.label}
-                className="grid grid-cols-1 gap-1 py-4 sm:grid-cols-[11rem_1fr] sm:gap-6"
+                className="grid grid-cols-1 gap-1 py-3 sm:grid-cols-[11rem_1fr] sm:gap-6"
               >
                 <dt className="eyebrow">{cell.label}</dt>
                 <dd className="text-sm leading-relaxed text-ink">{cell.value}</dd>
