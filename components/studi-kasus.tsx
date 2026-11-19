@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo, useState } from "react";
+import Link from "next/link";
 import { caseStudies, caseFilters, type CaseCategory } from "@/lib/content";
 import { FilterBar } from "./filter-bar";
 
@@ -123,6 +124,18 @@ export function StudiKasus() {
                 ))}
               </ul>
             </div>
+
+            {study.link && (
+              <div className="border-t border-hairline pt-5">
+                <Link
+                  href={study.link}
+                  className="link-editorial inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.14em] text-accent"
+                >
+                  Buka kalkulator
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
+            )}
           </article>
         ))}
 

@@ -180,6 +180,7 @@ export interface CaseStudy {
   categories: CaseCategory[];
   metrics: { label: string; value: string; note: string; highlight?: boolean }[];
   actions: string[];
+  link?: string;
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -313,6 +314,39 @@ export const caseStudies: CaseStudy[] = [
       "Menerapkan SEO dasar (struktur konten, metadata) pada setiap produk yang dirilis.",
       "Deploy ke Vercel dengan version control GitHub dan dokumentasi (README) yang konsisten.",
     ],
+  },
+  {
+    id: "case-05",
+    code: "CASE // 05",
+    client: "PRODUK YANG SAYA BANGUN",
+    period: "2026",
+    title: "Kalkulator ROAS & CAC: Tool Interaktif untuk Marketer",
+    context:
+      "Recruiter sering bertanya cara saya menganalisis performa iklan — saya bangun sendiri alat untuk menghitung CAC, ROAS, dan breakeven ROAS langsung di browser.",
+    categories: ["web-seo"],
+    metrics: [
+      {
+        label: "STATUS",
+        value: "Live",
+        note: "Produk nyata, dipakai bebas",
+      },
+      {
+        label: "CARA PAKAI",
+        value: "Tanpa signup",
+        note: "Langsung di browser",
+      },
+      {
+        label: "TEKNOLOGI",
+        value: "Next.js + TypeScript",
+        note: "Dibangun sendiri",
+      },
+    ],
+    actions: [
+      "Mendesain rumus CAC, ROAS, dan breakeven ROAS beserta logika interpretasinya.",
+      "Membangun kalkulator interaktif dengan perhitungan real-time dan formatting Bahasa Indonesia.",
+      "Menulis penjelasan edukatif cara membaca hasil untuk marketer pemula.",
+    ],
+    link: "/kalkulator-roas",
   },
 ];
 
